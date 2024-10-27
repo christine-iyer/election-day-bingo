@@ -6,26 +6,28 @@ export default function Home() {
   const [population, setPopulation] = useState("");
   const [data, setData] = useState([]); // Store fetched data
 
-  // Fetch data from API on component mount
   useEffect(() => {
     fetchData();
   }, []);
 
-  // Function to fetch data from the API
   const fetchData = async () => {
     try {
       const response = await fetch("/api/data", { method: "GET" });
       if (!response.ok) throw new Error("Failed to fetch data");
       const result = await response.json();
-      setData(result.data); // Update state with the fetched data
+      setData(result.data);
     } catch (error) {
       console.error("Failed to fetch data:", error);
     }
   };
 
-  // Function to handle form submission
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if (!name || !population) {
+      console.error("Name and population are required fields.");
+      return;
+    }
 
     try {
       const response = await fetch("/api/data", {
@@ -35,11 +37,12 @@ export default function Home() {
       });
 
       if (response.ok) {
+        console.log("Data submitted successfully");
         setName(""); // Clear input after submission
         setPopulation("");
-        await fetchData(); // Re-fetch and update the data list
+        await fetchData();
       } else {
-        console.error("Failed to submit data");
+        console.error("Failed to submit data:", await response.json());
       }
     } catch (error) {
       console.error("Error submitting data:", error);
