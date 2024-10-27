@@ -1,0 +1,14 @@
+
+[
+     {
+       "id": 1,
+       "name": "State A",
+       "population": 5000000
+     },
+     {
+       "id": 2,
+       "name": "State B",
+       "population": 3000000
+     }
+   ]
+   
