@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import USMap from './components/USMap'
 import BingoCard from "./components/BingoCard"
-import HistoricalMap from "./components/HistoricalMap"
+
 
 export default function Home() {
   const [name, setName] = useState("");
@@ -91,7 +91,7 @@ export default function Home() {
       <BingoCard />
     </div>
     <h1>Historical Map</h1>
-    <HistoricalMap />
+
     </div>
   );
 }
