@@ -81,6 +81,7 @@ export default function Home() {
       </ul>
       <div>
       <h1>Interactive U.S. Map</h1>
+      <hr></hr>
       <USMap />
     </div>
     </div>
