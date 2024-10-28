@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import USMap from './components/USMap'
+import BingoCard from "./components/BingoCard"
 
 export default function Home() {
   const [name, setName] = useState("");
@@ -83,6 +84,10 @@ export default function Home() {
       <h1>Interactive U.S. Map</h1>
       <hr></hr>
       <USMap />
+    </div>
+    <div>
+      <h1>Interactive Bingo Game</h1>
+      <BingoCard />
     </div>
     </div>
   );
