@@ -65,8 +65,7 @@ export default function USMap() {
     });
   }, []);
 
-  // Define projection and path generator
-  const projection = d3.geoAlbersUsa().scale(1000).translate([400, 250]); // Center and scale
+  const projection = d3.geoAlbersUsa().scale(1000).translate([400, 250]);
   const pathGenerator = d3.geoPath().projection(projection);
 
   const handleStateSelection = (stateName, selection) => {
@@ -78,18 +77,33 @@ export default function USMap() {
 
   return (
     <svg width={800} height={500}>
+      {/* Render each state */}
       {geoData && geoData.features.map((feature) => {
         const stateName = feature.properties.NAME;
-        const fillColor = stateSelections[stateName] || "white"; // default color
+        const fillColor = stateSelections[stateName] || "white";
+        const centroid = projection(d3.geoCentroid(feature)); // Get the centroid position
 
         return (
-          <path
-            key={stateName}
-            d={pathGenerator(feature)}
-            fill={fillColor}
-            stroke="gray"
-            onClick={() => handleStateSelection(stateName, "blue")} // example click handler
-          />
+          <g key={stateName}>
+            <path
+              d={pathGenerator(feature)}
+              fill={fillColor}
+              stroke="black"
+              onClick={() => handleStateSelection(stateName, "blue")}
+            />
+            {/* Render state name label only if centroid is valid */}
+            {centroid && (
+              <text
+                x={centroid[0]}
+                y={centroid[1]}
+                textAnchor="middle"
+                fontSize="8"
+                fill="black"
+              >
+                {stateName}
+              </text>
+            )}
+          </g>
         );
       })}
     </svg>
