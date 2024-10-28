@@ -90,6 +90,7 @@ export default function USMap() {
               fill={fillColor}
               stroke="black"
               onClick={() => handleStateSelection(stateName, "blue")}
+              onDoubleClick={()=> handleStateSelection(stateName, 'red')}
             />
             {/* Render state name label only if centroid is valid */}
             {centroid && (
