@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
+import USMap from './components/USMap'
 
 export default function Home() {
   const [name, setName] = useState("");
@@ -78,6 +79,10 @@ export default function Home() {
           </li>
         ))}
       </ul>
+      <div>
+      <h1>Interactive U.S. Map</h1>
+      <USMap />
+    </div>
     </div>
   );
 }
