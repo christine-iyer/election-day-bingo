@@ -4,728 +4,11 @@
 // import usStates from '../../public/us-states.geojson'; // Your GeoJSON data for US states
 
 
-// };
-const stateClosingTimes = [
-     {
-       "State": "Alabama",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 9,
-       "TimeSixteen": "8:26:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "8:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Alaska",
-       "ClosingTime": "1:00:00 AM",
-       "ElectoralVotes": 3,
-       "TimeSixteen": "11:58:00 PM",
-       "DaySixteen": "11/9/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "11:59:00 PM",
-       "DayTwenty": "11/11/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Hawaii-Aleutian Time Zone"
-     },
-     {
-       "State": "Arizona",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 11,
-       "TimeSixteen": "11/9/2016",
-       "DaySixteen": "3:43:00 AM",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "2:51:00 AM",
-       "DayTwenty": "11/4/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Mountain Time Zone"
-     },
-     {
-       "State": "Arkansas",
-       "ClosingTime": "8:30:00 PM",
-       "ElectoralVotes": 6,
-       "TimeSixteen": "9:08:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "8:30:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "California",
-       "ClosingTime": "11:00:00 PM",
-       "ElectoralVotes": 54,
-       "TimeSixteen": "11:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "11:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Pacific Time Zone"
-     },
-     {
-       "State": "Colorado",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 10,
-       "TimeSixteen": "10:43:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "9:37:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Mountain Time Zone"
-     },
-     {
-       "State": "Connecticut",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 7,
-       "TimeSixteen": "9:26:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "8:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "Delaware",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 3,
-       "TimeSixteen": "8:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "8:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "District of Columbia",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 3,
-       "TimeSixteen": "8:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "9:27:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "Florida",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 30,
-       "TimeSixteen": "10:50:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "12:35:00 AM",
-       "DayTwenty": "11/4/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Georgia",
-       "ClosingTime": "7:00:00 PM",
-       "ElectoralVotes": 16,
-       "TimeSixteen": "11:33:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "11:59:00 PM",
-       "DayTwenty": "11/19/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "Hawaii",
-       "ClosingTime": "12:00:00 AM",
-       "ElectoralVotes": 4,
-       "TimeSixteen": "11:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "12:06:00 AM",
-       "DayTwenty": "11/4/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Hawaii-Aleutian Time Zone"
-     },
-     {
-       "State": "Idaho",
-       "ClosingTime": "11:00:00 PM",
-       "ElectoralVotes": 4,
-       "TimeSixteen": "11:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "11:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Pacific Time Zone"
-     },
-     {
-       "State": "Illinois",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 19,
-       "TimeSixteen": "8:58:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "8:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Indiana",
-       "ClosingTime": "7:00:00 PM",
-       "ElectoralVotes": 11,
-       "TimeSixteen": "7:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "8:52:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Iowa",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 6,
-       "TimeSixteen": "12:00:00 AM",
-       "DaySixteen": "11/9/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "12:21:00 AM",
-       "DayTwenty": "11/4/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Kansas",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 6,
-       "TimeSixteen": "9:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "9:59:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Mountain Time Zone"
-     },
-     {
-       "State": "Kentucky",
-       "ClosingTime": "7:00:00 PM",
-       "ElectoralVotes": 8,
-       "TimeSixteen": "7:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "7:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Louisiana",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 8,
-       "TimeSixteen": "9:28:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "9:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Maine *",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 4,
-       "TimeSixteen": "1:56:00 AM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D3/Trump R1",
-       "TimeTwenty": "3:06:00 AM",
-       "DayTwenty": "11/4/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "Maryland",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 10,
-       "TimeSixteen": "8:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "8:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "Massachusetts",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 11,
-       "TimeSixteen": "8:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "8:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "Michigan",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 15,
-       "TimeSixteen": "2:00:00 PM",
-       "DaySixteen": "11/28/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "5:58:00 PM",
-       "DayTwenty": "11/4/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Minnesota",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 10,
-       "TimeSixteen": "11:09:00 AM",
-       "DaySixteen": "11/9/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "12:13:00 AM",
-       "DayTwenty": "11/4/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Mississippi",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 6,
-       "TimeSixteen": "8:11:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "8:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Missouri",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 10,
-       "TimeSixteen": "10:25:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "10:31:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Montana",
-       "ClosingTime": "10:00:00 PM",
-       "ElectoralVotes": 4,
-       "TimeSixteen": "10:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "12:20:00 AM",
-       "DayTwenty": "11/4/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Mountain Time Zone"
-     },
-     {
-       "State": "Nebraska",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 5,
-       "TimeSixteen": "9:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "9:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Mountain Time Zone"
-     },
-     {
-       "State": "Nevada",
-       "ClosingTime": "10:00:00 PM",
-       "ElectoralVotes": 6,
-       "TimeSixteen": "12:02:00 AM",
-       "DaySixteen": "11/9/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "12:13:00 PM",
-       "DayTwenty": "11/7/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Mountain Time Zone"
-     },
-     {
-       "State": "New Hampshire",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 4,
-       "TimeSixteen": "6:04:00 PM",
-       "DaySixteen": "11/14/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "10:51:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "New Jersey",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 14,
-       "TimeSixteen": "8:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "8:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "New Mexico",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 5,
-       "TimeSixteen": "9:21:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "9:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Mountain Time Zone"
-     },
-     {
-       "State": "New York",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 28,
-       "TimeSixteen": "9:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "9:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "North Carolina",
-       "ClosingTime": "7:30:00 PM",
-       "ElectoralVotes": 16,
-       "TimeSixteen": "11:11:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "11:59:00 PM",
-       "DayTwenty": "11/13/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "North Dakota",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 3,
-       "TimeSixteen": "9:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "9:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Mountain Time Zone"
-     },
-     {
-       "State": "Ohio",
-       "ClosingTime": "7:30:00 PM",
-       "ElectoralVotes": 17,
-       "TimeSixteen": "10:36:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "12:19:00 AM",
-       "DayTwenty": "11/4/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "Oklahoma",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 7,
-       "TimeSixteen": "8:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "8:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Oregon",
-       "ClosingTime": "11:00:00 PM",
-       "ElectoralVotes": 8,
-       "TimeSixteen": "11:05:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "11:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Mountain Time Zone"
-     },
-     {
-       "State": "Pennsylvania",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 19,
-       "TimeSixteen": "1:35:00 AM",
-       "DaySixteen": "11/9/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "11:25:00 AM",
-       "DayTwenty": "11/7/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "Rhode Island",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 4,
-       "TimeSixteen": "8:39:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "8:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "South Carolina",
-       "ClosingTime": "7:00:00 PM",
-       "ElectoralVotes": 9,
-       "TimeSixteen": "8:09:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "7:56:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "South Dakota",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 3,
-       "TimeSixteen": "9:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "9:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Mountain Time Zone"
-     },
-     {
-       "State": "Tennessee",
-       "ClosingTime": "8:00:00 PM",
-       "ElectoralVotes": 11,
-       "TimeSixteen": "8:13:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "8:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Texas",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 40,
-       "TimeSixteen": "9:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "1:06:00 AM",
-       "DayTwenty": "11/4/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Mountain Time Zone"
-     },
-     {
-       "State": "Utah",
-       "ClosingTime": "10:00:00 PM",
-       "ElectoralVotes": 6,
-       "TimeSixteen": "11:52:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "11:08:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Mountain Time Zone"
-     },
-     {
-       "State": "Vermont",
-       "ClosingTime": "7:00:00 PM",
-       "ElectoralVotes": 3,
-       "TimeSixteen": "7:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "7:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "Virginia",
-       "ClosingTime": "7:00:00 PM",
-       "ElectoralVotes": 13,
-       "TimeSixteen": "10:40:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "7:36:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "Washington",
-       "ClosingTime": "11:00:00 PM",
-       "ElectoralVotes": 12,
-       "TimeSixteen": "11:28:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Clinton D",
-       "TimeTwenty": "11:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Pacific Time Zone"
-     },
-     {
-       "State": "West Virginia",
-       "ClosingTime": "7:30:00 PM",
-       "ElectoralVotes": 4,
-       "TimeSixteen": "7:30:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "7:30:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Eastern Time Zone"
-     },
-     {
-       "State": "Wisconsin",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 10,
-       "TimeSixteen": "2:29:00 AM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "2:16:00 PM",
-       "DayTwenty": "11/4/2020",
-       "WinnerTwenty": "Biden D",
-       "Zone": "Central Time Zone"
-     },
-     {
-       "State": "Wyoming",
-       "ClosingTime": "9:00:00 PM",
-       "ElectoralVotes": 3,
-       "TimeSixteen": "9:00:00 PM",
-       "DaySixteen": "11/8/2016",
-       "WinnerSixteen": "Trump R",
-       "TimeTwenty": "9:00:00 PM",
-       "DayTwenty": "11/3/2020",
-       "WinnerTwenty": "Trump R",
-       "Zone": "Mountain Time Zone"
-     }
-   ]
 
-
-
-// const combinedData = stateClosingTimes.map(stateInfo => {
-//   const population = statePopulation[stateInfo.State];
-//   return { ...stateInfo, Population: population };
-// });
-
-// console.log(combinedData);
 
 // const USMap = () => {
 //   useEffect(() => {
-//     const width = 960;
-//     const height = 600;
-
-//     const svg = d3.select("#map")
-//       .append("svg")
-//       .attr("width", width)
-//       .attr("height", height);
-
-//     const projection = d3.geoAlbersUsa().scale(1000).translate([width / 2, height / 2]);
-//     const path = d3.geoPath().projection(projection);
    
-//     // Create a mapping for the states from combinedData for quick lookup
-//     const stateDataMap = new Map(combinedData.map(d => [d.State, d]));
-
-//         // Parse each state’s `TimeSixteen` and `DaySixteen` into a Date object and sort them chronologically
-//         combinedData.forEach(d => {
-//           d.announcementTime = new Date(`${d.DayTwenty}T${d.TimeTwenty}`);
-//         });
-    
-//         combinedData.sort((a, b) => a.announcementTime - b.announcementTime);  // Sort states by announcement time
-    
-//         // Calculate total duration (in milliseconds) for the entire animation
-
-//     // Tooltip element
-//     const tooltip = d3.select("body")
-//       .append("div")
-//       .attr("class", "tooltip")
-//       .style("position", "absolute")
-//       .style("padding", "8px")
-//       .style("background", "rgba(0, 0, 0, 0.7)")
-//       .style("color", "#a45b8e")
-//       .style("border-radius", "4px")
-//       .style("pointer-events", "none")
-//       .style("opacity", 0);
-
-//     // Draw the map
-//     svg.selectAll("path")
-//       .data(usStates.features)
-//       .enter()
-//       .append("path")
-//       .attr("d", path)
-//       .attr("fill", (d) => {
-//         const stateName = d.properties.NAME;
-//         const stateData = stateDataMap.get(stateName);
-
-//         // Determine color based on WinnerSixteen and WinnerTwenty
-//         if (stateData) {
-//           const WinnerTwenty = stateData.WinnerTwenty.slice(-1);  // Get last character
-//     // Get last character
-//           return (WinnerTwenty === "R" ) ? "red" : 
-//           (WinnerTwenty === "D" ) ? "blue" : "white";
-//         }
-//         return "#ccc"; // Default color if no data
-//       })
-//       .attr("stroke", "#a45b8e")
-//       .attr("stroke-width", 1.5)
-//       .on("mouseover", function (event, d) {
-//         const stateName = d.properties.NAME;
-//         const stateData = stateDataMap.get(stateName);
-
-//         if (stateData) {
-//           tooltip
-//             .transition()
-//             .duration(200)
-//             .style("opacity", 1);
-//           tooltip
-//             .html(`
-//               <strong>${stateName}</strong><br>
-//               Population: ${stateData.Population.toLocaleString()}<br>
-//               Electoral Votes: ${stateData.ElectoralVotes}<br>
-//               Winner: ${stateData.WinnerTwenty}
-//             `)
-//             .style("left", (event.pageX + 10) + "px")
-//             .style("top", (event.pageY - 28) + "px");
-
-//           d3.select(this)
-//             .attr("stroke", "#333")
-//             .attr("stroke-width", 3);  
-//         }
-//       })
-//       .on("mousemove", (event) => {
-//         tooltip
-//           .style("left", (event.pageX + 10) + "px")
-//           .style("top", (event.pageY - 28) + "px");
-//       })
-//       .on("mouseout", function () {
-//         tooltip
-//           .transition()
-//           .duration(500)
-//           .style("opacity", 0);
-
-//         d3.select(this)
-//           .attr("stroke", "#a45b8e")
-//           .attr("stroke-width", 1.5);  // Reset the state boundary style
-//       });
 
 //   }, []);
 
@@ -790,6 +73,728 @@ const USMap = () => {
   'West Virginia': 1792147,
   'Wisconsin': 5822434,
   'Wyoming': 578759}
+  const stateClosingTimes = [
+    {
+      "State": "Alabama",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 9,
+      "TimeSixteen": "8:26:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "8:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "AL",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "Alaska",
+      "ClosingTime": "1:00:00 AM",
+      "ElectoralVotes": 3,
+      "TimeSixteen": "11:58:00 PM",
+      "DaySixteen": "11/9/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "11:59:00 PM",
+      "DayTwenty": "11/11/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Hawaii-Aleutian Time Zone",
+      "Abbreviation": "AK",
+      "Anticipated Call": "11/06/2024 12:00:00 AM"
+    },
+    {
+      "State": "Arizona",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 11,
+      "TimeSixteen": "11/9/2016",
+      "DaySixteen": "3:43:00 AM",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "2:51:00 AM",
+      "DayTwenty": "11/4/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "AZ",
+      "Anticipated Call": "11/06/2024 03:00:00 AM"
+    },
+    {
+      "State": "Arkansas",
+      "ClosingTime": "8:30:00 PM",
+      "ElectoralVotes": 6,
+      "TimeSixteen": "9:08:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "8:30:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "AR",
+      "Anticipated Call": "11/05/2024 09:00:00 PM"
+    },
+    {
+      "State": "California",
+      "ClosingTime": "11:00:00 PM",
+      "ElectoralVotes": 54,
+      "TimeSixteen": "11:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "11:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Pacific Time Zone", 
+      "Abbreviation": "CA",
+      "Anticipated Call": "11/05/2024 11:00:00PM"
+    },
+    {
+      "State": "Colorado",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 10,
+      "TimeSixteen": "10:43:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "9:37:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "CO",
+      "Anticipated Call": "11/05/2024 10:00:00 PM"
+    },
+    {
+      "State": "Connecticut",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 7,
+      "TimeSixteen": "9:26:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "8:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "CT",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "Delaware",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 3,
+      "TimeSixteen": "8:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "8:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "DE",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "District of Columbia",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 3,
+      "TimeSixteen": "8:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "9:27:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "DC",
+      "Anticipated Call": "11/05/2024 09:00:00 PM"
+    },
+    {
+      "State": "Florida",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 30,
+      "TimeSixteen": "10:50:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "12:35:00 AM",
+      "DayTwenty": "11/4/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "FL",
+      "Anticipated Call": "11/06/2024 12:00:00 AM"
+    },
+    {
+      "State": "Georgia",
+      "ClosingTime": "7:00:00 PM",
+      "ElectoralVotes": 16,
+      "TimeSixteen": "11:33:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "11:59:00 PM",
+      "DayTwenty": "11/19/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "GA",
+      "Anticipated Call": "11/09/2024 09:00:00 PM"
+    },
+    {
+      "State": "Hawaii",
+      "ClosingTime": "12:00:00 AM",
+      "ElectoralVotes": 4,
+      "TimeSixteen": "11:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "12:06:00 AM",
+      "DayTwenty": "11/4/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Hawaii-Aleutian Time Zone", 
+      "Abbreviation": "HI",
+      "Anticipated Call": "11/06/2024 12:00:00 AM"
+    },
+    {
+      "State": "Idaho",
+      "ClosingTime": "11:00:00 PM",
+      "ElectoralVotes": 4,
+      "TimeSixteen": "11:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "11:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Pacific Time Zone", 
+      "Abbreviation": "ID",
+      "Anticipated Call": "11/05/2024 10:00:00 PM"
+    },
+    {
+      "State": "Illinois",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 19,
+      "TimeSixteen": "8:58:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "8:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "IL",
+      "Anticipated Call": "11/05/2024 09:00:00 PM"
+    },
+    {
+      "State": "Indiana",
+      "ClosingTime": "7:00:00 PM",
+      "ElectoralVotes": 11,
+      "TimeSixteen": "7:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "8:52:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "IN",
+      "Anticipated Call": "11/05/2024 09:00:00 PM"
+    },
+    {
+      "State": "Iowa",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 6,
+      "TimeSixteen": "12:00:00 AM",
+      "DaySixteen": "11/9/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "12:21:00 AM",
+      "DayTwenty": "11/4/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "IA",
+      "Anticipated Call": "11/06/2024 12:00:00 AM"
+    },
+    {
+      "State": "Kansas",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 6,
+      "TimeSixteen": "9:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "9:59:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "KS",
+      "Anticipated Call": "11/05/2024 09:00:00 PM"
+    },
+    {
+      "State": "Kentucky",
+      "ClosingTime": "7:00:00 PM",
+      "ElectoralVotes": 8,
+      "TimeSixteen": "7:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "7:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "KY",
+      "Anticipated Call": "11/05/2024 07:00:00 PM"
+    },
+    {
+      "State": "Louisiana",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 8,
+      "TimeSixteen": "9:28:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "9:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "LA",
+      "Anticipated Call": "11/05/2024 09:00:00 PM"
+    },
+    {
+      "State": "Maine",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 4,
+      "TimeSixteen": "1:56:00 AM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D3/Trump R1",
+      "TimeTwenty": "3:06:00 AM",
+      "DayTwenty": "11/4/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "ME",
+      "Anticipated Call": "11/06/2024 02:00:00 AM"
+    },
+    {
+      "State": "Maryland",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 10,
+      "TimeSixteen": "8:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "8:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "MD",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "Massachusetts",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 11,
+      "TimeSixteen": "8:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "8:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "MA",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "Michigan",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 15,
+      "TimeSixteen": "2:00:00 PM",
+      "DaySixteen": "11/28/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "5:58:00 PM",
+      "DayTwenty": "11/4/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "MI",
+      "Anticipated Call": "11/06/2024 06:00:00 PM"
+    },
+    {
+      "State": "Minnesota",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 10,
+      "TimeSixteen": "11:09:00 AM",
+      "DaySixteen": "11/9/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "12:13:00 AM",
+      "DayTwenty": "11/4/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "MI",
+      "Anticipated Call": "11/06/2024 12:00:00 AM"
+    },
+    {
+      "State": "Mississippi",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 6,
+      "TimeSixteen": "8:11:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "8:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "MS",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "Missouri",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 10,
+      "TimeSixteen": "10:25:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "10:31:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "MO",
+      "Anticipated Call": "11/05/2024 10:00:00 PM"
+    },
+    {
+      "State": "Montana",
+      "ClosingTime": "10:00:00 PM",
+      "ElectoralVotes": 4,
+      "TimeSixteen": "10:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "12:20:00 AM",
+      "DayTwenty": "11/4/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "MT",
+      "Anticipated Call": "11/05/2024 11:00:00 PM"
+    },
+    {
+      "State": "Nebraska",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 5,
+      "TimeSixteen": "9:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "9:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "NE",
+      "Anticipated Call": "11/05/2024 09:00:00 PM"
+    },
+    {
+      "State": "Nevada",
+      "ClosingTime": "10:00:00 PM",
+      "ElectoralVotes": 6,
+      "TimeSixteen": "12:02:00 AM",
+      "DaySixteen": "11/9/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "12:13:00 PM",
+      "DayTwenty": "11/7/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "NV",
+      "Anticipated Call": "11/06/2024 12:00:00 AM"
+    },
+    {
+      "State": "New Hampshire",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 4,
+      "TimeSixteen": "6:04:00 PM",
+      "DaySixteen": "11/14/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "10:51:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "NH",
+      "Anticipated Call": "11/05/2024 11:00:00 PM"
+    },
+    {
+      "State": "New Jersey",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 14,
+      "TimeSixteen": "8:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "8:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "NJ",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "New Mexico",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 5,
+      "TimeSixteen": "9:21:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "9:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "NM",
+      "Anticipated Call": "11/05/2024 09:00:00 PM"
+    },
+    {
+      "State": "New York",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 28,
+      "TimeSixteen": "9:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "9:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "AL",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "North Carolina",
+      "ClosingTime": "7:30:00 PM",
+      "ElectoralVotes": 16,
+      "TimeSixteen": "11:11:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "11:59:00 PM",
+      "DayTwenty": "11/13/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "NY",
+      "Anticipated Call": "11/09/2024 08:00:00 PM"
+    },
+    {
+      "State": "North Dakota",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 3,
+      "TimeSixteen": "9:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "9:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "ND",
+      "Anticipated Call": "11/05/2024 09:00:00 PM"
+    },
+    {
+      "State": "Ohio",
+      "ClosingTime": "7:30:00 PM",
+      "ElectoralVotes": 17,
+      "TimeSixteen": "10:36:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "12:19:00 AM",
+      "DayTwenty": "11/4/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "OH",
+      "Anticipated Call": "11/06/2024 12:00:00 AM"
+    },
+    {
+      "State": "Oklahoma",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 7,
+      "TimeSixteen": "8:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "8:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "OK",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "Oregon",
+      "ClosingTime": "11:00:00 PM",
+      "ElectoralVotes": 8,
+      "TimeSixteen": "11:05:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "11:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "OR",
+      "Anticipated Call": "11/05/2024 11:00:00 PM"
+    },
+    {
+      "State": "Pennsylvania",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 19,
+      "TimeSixteen": "1:35:00 AM",
+      "DaySixteen": "11/9/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "11:25:00 AM",
+      "DayTwenty": "11/7/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "PA",
+      "Anticipated Call": "11/06/2024 12:00:00 AM"
+    },
+    {
+      "State": "Rhode Island",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 4,
+      "TimeSixteen": "8:39:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "8:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "RI",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "South Carolina",
+      "ClosingTime": "7:00:00 PM",
+      "ElectoralVotes": 9,
+      "TimeSixteen": "8:09:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "7:56:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "SC",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "South Dakota",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 3,
+      "TimeSixteen": "9:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "9:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "SD",
+      "Anticipated Call": "11/05/2024 09:00:00 PM"
+    },
+    {
+      "State": "Tennessee",
+      "ClosingTime": "8:00:00 PM",
+      "ElectoralVotes": 11,
+      "TimeSixteen": "8:13:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "8:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "TN",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "Texas",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 40,
+      "TimeSixteen": "9:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "1:06:00 AM",
+      "DayTwenty": "11/4/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "TX",
+      "Anticipated Call": "11/05/2024 10:00:00 PM"
+    },
+    {
+      "State": "Utah",
+      "ClosingTime": "10:00:00 PM",
+      "ElectoralVotes": 6,
+      "TimeSixteen": "11:52:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "11:08:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "UT",
+      "Anticipated Call": "11/05/2024 11:00:00 PM"
+    },
+    {
+      "State": "Vermont",
+      "ClosingTime": "7:00:00 PM",
+      "ElectoralVotes": 3,
+      "TimeSixteen": "7:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "7:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "VT",
+      "Anticipated Call": "11/05/2024 07:00:00 PM"
+    },
+    {
+      "State": "Virginia",
+      "ClosingTime": "7:00:00 PM",
+      "ElectoralVotes": 13,
+      "TimeSixteen": "10:40:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "7:36:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "VA",
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
+    },
+    {
+      "State": "Washington",
+      "ClosingTime": "11:00:00 PM",
+      "ElectoralVotes": 12,
+      "TimeSixteen": "11:28:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Clinton D",
+      "TimeTwenty": "11:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Pacific Time Zone", 
+      "Abbreviation": "WA",
+      "Anticipated Call": "11/05/2024 11:00:00 PM"
+    },
+    {
+      "State": "West Virginia",
+      "ClosingTime": "7:30:00 PM",
+      "ElectoralVotes": 4,
+      "TimeSixteen": "7:30:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "7:30:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Eastern Time Zone", 
+      "Abbreviation": "WV",
+      "Anticipated Call": "11/05/2024 07:30 PM"
+    },
+    {
+      "State": "Wisconsin",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 10,
+      "TimeSixteen": "2:29:00 AM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "2:16:00 PM",
+      "DayTwenty": "11/4/2020",
+      "WinnerTwenty": "Biden D",
+      "Zone": "Central Time Zone", 
+      "Abbreviation": "WI",
+      "Anticipated Call": "11/06/2024 02:00:00 AM"
+    },
+    {
+      "State": "Wyoming",
+      "ClosingTime": "9:00:00 PM",
+      "ElectoralVotes": 3,
+      "TimeSixteen": "9:00:00 PM",
+      "DaySixteen": "11/8/2016",
+      "WinnerSixteen": "Trump R",
+      "TimeTwenty": "9:00:00 PM",
+      "DayTwenty": "11/3/2020",
+      "WinnerTwenty": "Trump R",
+      "Zone": "Mountain Time Zone", 
+      "Abbreviation": "WY",
+      "Anticipated Call": "11/05/2024 09:00:00 PM"
+    }
+  ]
+  const combinedData = stateClosingTimes.map(stateInfo => {
+    const population = statePopulation[stateInfo.State];
+    return { ...stateInfo, Population: population };
+  });
+  
+  console.log(combinedData[3]);
   
 
   const [usStates, setUsStates] = useState(null);
@@ -808,11 +813,9 @@ const USMap = () => {
 
     // Clear any previous SVG if present
     d3.select("#map").select("svg").remove();
-
     const width = 960;
     const height = 600;
 
-    // Append new SVG for the map
     const svg = d3.select("#map")
       .append("svg")
       .attr("width", width)
@@ -820,6 +823,30 @@ const USMap = () => {
 
     const projection = d3.geoAlbersUsa().scale(1000).translate([width / 2, height / 2]);
     const path = d3.geoPath().projection(projection);
+   
+    // Create a mapping for the states from combinedData for quick lookup
+    const stateDataMap = new Map(combinedData.map(d => [d.State, d]));
+
+        // Parse each state’s `TimeSixteen` and `DaySixteen` into a Date object and sort them chronologically
+        combinedData.forEach(d => {
+          d.announcementTime = new Date(`${d.DayTwenty}T${d.TimeTwenty}`);
+        });
+    
+        combinedData.sort((a, b) => a.announcementTime - b.announcementTime);  // Sort states by announcement time
+    
+        // Calculate total duration (in milliseconds) for the entire animation
+
+    // Tooltip element
+    const tooltip = d3.select("body")
+      .append("div")
+      .attr("class", "tooltip")
+      .style("position", "absolute")
+      .style("padding", "8px")
+      .style("background", "rgba(0, 0, 0, 0.7)")
+      .style("color", "#a45b8e")
+      .style("border-radius", "4px")
+      .style("pointer-events", "none")
+      .style("opacity", 0);
 
     // Draw the map
     svg.selectAll("path")
@@ -827,9 +854,61 @@ const USMap = () => {
       .enter()
       .append("path")
       .attr("d", path)
-      .attr("fill", "#ccc")
-      .attr("stroke", "#333");
+      .attr("fill", (d) => {
+        const stateName = d.properties.NAME;
+        const stateData = stateDataMap.get(stateName);
 
+        // Determine color based on WinnerSixteen and WinnerTwenty
+        if (stateData) {
+          const WinnerTwenty = stateData.WinnerTwenty.slice(-1);  // Get last character
+    // Get last character
+          return (WinnerTwenty === "R" ) ? "red" : 
+          (WinnerTwenty === "D" ) ? "blue" : "white";
+        }
+        return "#ccc"; // Default color if no data
+      })
+      .attr("stroke", "#a45b8e")
+      .attr("stroke-width", 1.5)
+      .on("mouseover", function (event, d) {
+        const stateName = d.properties.NAME;
+        const stateData = stateDataMap.get(stateName);
+
+        if (stateData) {
+          tooltip
+            .transition()
+            .duration(200)
+            .style("opacity", 1);
+          tooltip
+            .html(`
+              <strong>${stateName}</strong><br>
+              Population: ${stateData.Population.toLocaleString()}<br>
+              Electoral Votes: ${stateData.ElectoralVotes}<br>
+              Winner: ${stateData.WinnerTwenty}
+            `)
+            .style("left", (event.pageX + 10) + "px")
+            .style("top", (event.pageY - 28) + "px");
+
+          d3.select(this)
+            .attr("stroke", "#333")
+            .attr("stroke-width", 3);  
+        }
+      })
+      .on("mousemove", (event) => {
+        tooltip
+          .style("left", (event.pageX + 10) + "px")
+          .style("top", (event.pageY - 28) + "px");
+      })
+      .on("mouseout", function () {
+        tooltip
+          .transition()
+          .duration(500)
+          .style("opacity", 0);
+
+        d3.select(this)
+          .attr("stroke", "#a45b8e")
+          .attr("stroke-width", 1.5);  // Reset the state boundary style
+      });
+   
   }, [usStates]);
 
   return<div>
