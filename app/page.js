@@ -55,7 +55,19 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Data List</h1>
+
+
+      <div>
+      <h1>Interactive U.S. Map</h1>
+      <hr></hr>
+      <USMap />
+    </div>
+    <div>
+     <HistoricalMap />
+    </div>
+    <h1>Interactive Bingo Game</h1>
+    <BingoCard />
+    <div>      <h1>Data List</h1>
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -81,17 +93,8 @@ export default function Home() {
             {item.name} - Population: {item.population}
           </li>
         ))}
-      </ul>
-      <div>
-      <h1>Interactive U.S. Map</h1>
-      <hr></hr>
-      <USMap />
-    </div>
-    <div>
-      <h1>Interactive Bingo Game</h1>
-      <BingoCard />
-    </div>
-    <HistoricalMap />
+      </ul></div>
+    
 
 
     </div>
