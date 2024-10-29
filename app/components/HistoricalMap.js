@@ -912,7 +912,7 @@ const USMap = () => {
   }, [usStates]);
 
   return<div>
-    <h1>Historical Electoral Map Here (Coming Soon!!!)</h1>
+    <h1>Historical Electoral Map Here (2020)</h1>
     <div id="map" style={{ width: "100%", height: "100%" }}></div>;
   </div>
   
