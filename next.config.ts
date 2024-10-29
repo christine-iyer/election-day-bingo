@@ -1,7 +1,12 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
-  /* config options here */
+// next.config.js
+const nextConfig = {
+  webpack: (config) => {
+    config.module.rules.push({
+      test: /\.geojson$/,
+      use: ['file-loader'],
+    });
+    return config;
+  },
 };
 
-export default nextConfig;
+module.exports = nextConfig;
