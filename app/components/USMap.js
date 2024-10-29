@@ -90,7 +90,11 @@ export default function USMap() {
               fill={fillColor}
               stroke="black"
               onClick={() => handleStateSelection(stateName, "blue")}
-              onDoubleClick={()=> handleStateSelection(stateName, 'red')}
+              onDoubleClick={() => handleStateSelection(stateName, "red")}
+              onContextMenu={(e) => {
+                e.preventDefault(); // Prevents the default right-click menu
+                handleStateSelection(stateName, "white");
+              }}
             />
             {/* Render state name label only if centroid is valid */}
             {centroid && (
@@ -110,3 +114,4 @@ export default function USMap() {
     </svg>
   );
 }
+

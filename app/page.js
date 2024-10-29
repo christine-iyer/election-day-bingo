@@ -91,8 +91,8 @@ export default function Home() {
       <h1>Interactive Bingo Game</h1>
       <BingoCard />
     </div>
-    <h1>Historical Map</h1>
     <HistoricalMap />
+
 
     </div>
   );
