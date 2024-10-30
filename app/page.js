@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import USMap from './components/USMap'
 import BingoCard from "./components/BingoCard"
 import HistoricalMap from './components/HistoricalMap'
+import Clock from './components/Clock'
 
 
 export default function Home() {
@@ -93,7 +94,9 @@ export default function Home() {
             {item.name} - Population: {item.population}
           </li>
         ))}
-      </ul></div>
+      </ul>
+      <Clock/>
+      </div>
     
 
 
