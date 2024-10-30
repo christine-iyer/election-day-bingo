@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import * as d3 from 'd3';
+import  "./clock.css"
+
+
 
 export default function USMap() {
   const [geoData, setGeoData] = useState(null);
@@ -76,7 +79,8 @@ export default function USMap() {
   };
 
   return (
-    <svg width={800} height={500}>
+    <div className='today'>
+    <svg width={800} height={500} >
       {/* Render each state */}
       {geoData && geoData.features.map((feature) => {
         const stateName = feature.properties.NAME;
@@ -112,6 +116,7 @@ export default function USMap() {
         );
       })}
     </svg>
+    </div>
   );
 }
 
