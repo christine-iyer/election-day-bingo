@@ -3,6 +3,7 @@
      padding: 0;
  }
  .today {
+    margin-top: 120px;
     display: flex;
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
@@ -10,8 +11,8 @@
  }
  .clock {
      position: absolute;
-     width: 300px;
-     height: 300px;
+     width: 600px;
+     height: 600px;
      border: 2px blueviolet;
      border-radius: 50%;
      left: 50%;
@@ -24,9 +25,9 @@
  .clock::before {
      position: absolute;
      content: '';
-     height: 130px;
-     width: 10px;
-     background: black;
+     height: 100px;
+     width: 8px;
+     background: rgba(0, 0, 255, 0.596);
      top: 50%;
      left: calc(50% - 5px);
      border-radius: 5px;
@@ -37,9 +38,9 @@
  .clock::after {
      position: absolute;
      content: '';
-     height: 100px;
-     width: 10px;
-     background: black;
+     height: 80px;
+     width: 8px;
+     background: rgba(0, 0, 255, 0.596);
      top: 50%;
      left: calc(50% - 5px);
      border-radius: 5px;
@@ -63,7 +64,7 @@
      width: 20px;
      height: 20px;
      border-radius: 50%;
-     background: #b06a26;
+     background: red;
      left: 50%;
      top: 50%;
      transform: translate(-50%, -50%);
@@ -77,10 +78,10 @@
      width: 10px;
      height: 10px;
      border-radius: 50%;
-     background: black;
+     background: none;
      left: 50%;
      top: calc(50% - 145px);
      z-index: 2;
      transform: translateX(-50%);
-     box-shadow: 140px 145px 0 0 black, -140px 145px 0 0 black, 0 280px 0 0 black;
+     box-shadow: 140px 145px 0 0 none, -140px 145px 0 0 none, 0 280px 0 0 none;
  }

@@ -1,26 +1,9 @@
-// "use client"; // Add this line at the top to make it a client component
-// import React, { useEffect } from "react";
-// import * as d3 from "d3";
-// import usStates from '../../public/us-states.geojson'; // Your GeoJSON data for US states
 
-
-
-
-// const USMap = () => {
-//   useEffect(() => {
-   
-
-//   }, []);
-
-//   return <div id="map"></div>;
-// };
-
-// export default USMap;
 "use client"; // Ensures it's a client component
 import React, { useEffect, useState } from "react";
 import * as d3 from "d3";
 
-const USMap = () => {
+const HistoricalMap = () => {
   const statePopulation = {
   'Alabama': 4903185,
   'Alaska': 731545,
@@ -86,7 +69,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Central Time Zone", 
       "Abbreviation": "AL",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T08:00:00"
     },
     {
       "State": "Alaska",
@@ -100,7 +83,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Hawaii-Aleutian Time Zone",
       "Abbreviation": "AK",
-      "Anticipated Call": "11/06/2024 12:00:00 AM"
+      "AnticipatedCall": "2024-11-06T00:00:00"
     },
     {
       "State": "Arizona",
@@ -114,7 +97,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "AZ",
-      "Anticipated Call": "11/06/2024 03:00:00 AM"
+      "AnticipatedCall": "2024-11-06T03:00:00"
     },
     {
       "State": "Arkansas",
@@ -128,7 +111,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Central Time Zone", 
       "Abbreviation": "AR",
-      "Anticipated Call": "11/05/2024 09:00:00 PM"
+      "AnticipatedCall": "2024-11-05T21:00:00"
     },
     {
       "State": "California",
@@ -142,7 +125,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Pacific Time Zone", 
       "Abbreviation": "CA",
-      "Anticipated Call": "11/05/2024 11:00:00PM"
+      "AnticipatedCall": "2024-11-05T23:00:00"
     },
     {
       "State": "Colorado",
@@ -156,7 +139,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "CO",
-      "Anticipated Call": "11/05/2024 10:00:00 PM"
+      "AnticipatedCall": "2024-11-05T22:00:00"
     },
     {
       "State": "Connecticut",
@@ -170,7 +153,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "CT",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T20:00:00"
     },
     {
       "State": "Delaware",
@@ -184,7 +167,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "DE",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T20:00:00"
     },
     {
       "State": "District of Columbia",
@@ -198,7 +181,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "DC",
-      "Anticipated Call": "11/05/2024 09:00:00 PM"
+      "AnticipatedCall": "2024-11-05T21:00:00"
     },
     {
       "State": "Florida",
@@ -212,7 +195,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Central Time Zone", 
       "Abbreviation": "FL",
-      "Anticipated Call": "11/06/2024 12:00:00 AM"
+      "AnticipatedCall": "2024-11-06T00:00:00"
     },
     {
       "State": "Georgia",
@@ -226,7 +209,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "GA",
-      "Anticipated Call": "11/09/2024 09:00:00 PM"
+      "AnticipatedCall": "2024-11-09T21:00:00M"
     },
     {
       "State": "Hawaii",
@@ -240,7 +223,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Hawaii-Aleutian Time Zone", 
       "Abbreviation": "HI",
-      "Anticipated Call": "11/06/2024 12:00:00 AM"
+      "AnticipatedCall": "2024-11-06T00:00:00"
     },
     {
       "State": "Idaho",
@@ -254,7 +237,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Pacific Time Zone", 
       "Abbreviation": "ID",
-      "Anticipated Call": "11/05/2024 10:00:00 PM"
+      "AnticipatedCall": "2024-11-05T23:00:00"
     },
     {
       "State": "Illinois",
@@ -268,7 +251,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Central Time Zone", 
       "Abbreviation": "IL",
-      "Anticipated Call": "11/05/2024 09:00:00 PM"
+      "AnticipatedCall": "2024-11-05T21:00:00"
     },
     {
       "State": "Indiana",
@@ -282,7 +265,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Central Time Zone", 
       "Abbreviation": "IN",
-      "Anticipated Call": "11/05/2024 09:00:00 PM"
+      "AnticipatedCall": "2024-11-05T21:00:00"
     },
     {
       "State": "Iowa",
@@ -296,7 +279,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Central Time Zone", 
       "Abbreviation": "IA",
-      "Anticipated Call": "11/06/2024 12:00:00 AM"
+      "AnticipatedCall": "2024-11-06T00:00:00"
     },
     {
       "State": "Kansas",
@@ -310,7 +293,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "KS",
-      "Anticipated Call": "11/05/2024 09:00:00 PM"
+      "AnticipatedCall": "2024-11-05T21:00:00"
     },
     {
       "State": "Kentucky",
@@ -324,7 +307,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Central Time Zone", 
       "Abbreviation": "KY",
-      "Anticipated Call": "11/05/2024 07:00:00 PM"
+      "AnticipatedCall": "2024-11-05T19:00:00"
     },
     {
       "State": "Louisiana",
@@ -338,7 +321,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Central Time Zone", 
       "Abbreviation": "LA",
-      "Anticipated Call": "11/05/2024 09:00:00 PM"
+      "AnticipatedCall": "2024-11-05T21:00:00"
     },
     {
       "State": "Maine",
@@ -352,7 +335,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "ME",
-      "Anticipated Call": "11/06/2024 02:00:00 AM"
+      "AnticipatedCall": "2024-11-06T02:00:00"
     },
     {
       "State": "Maryland",
@@ -366,7 +349,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "MD",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T20:00:00"
     },
     {
       "State": "Massachusetts",
@@ -380,7 +363,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "MA",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T20:00:00"
     },
     {
       "State": "Michigan",
@@ -394,7 +377,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Central Time Zone", 
       "Abbreviation": "MI",
-      "Anticipated Call": "11/06/2024 06:00:00 PM"
+      "AnticipatedCall": "2024-11-06T18:00:00"
     },
     {
       "State": "Minnesota",
@@ -408,7 +391,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Central Time Zone", 
       "Abbreviation": "MI",
-      "Anticipated Call": "11/06/2024 12:00:00 AM"
+      "AnticipatedCall": "2024-11-06T00:00:00"
     },
     {
       "State": "Mississippi",
@@ -422,7 +405,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Central Time Zone", 
       "Abbreviation": "MS",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T20:00:00"
     },
     {
       "State": "Missouri",
@@ -436,7 +419,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Central Time Zone", 
       "Abbreviation": "MO",
-      "Anticipated Call": "11/05/2024 10:00:00 PM"
+      "AnticipatedCall": "2024-11-05T22:00:00"
     },
     {
       "State": "Montana",
@@ -450,7 +433,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "MT",
-      "Anticipated Call": "11/05/2024 11:00:00 PM"
+      "AnticipatedCall": "2024-11-05T23:00:00"
     },
     {
       "State": "Nebraska",
@@ -464,7 +447,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "NE",
-      "Anticipated Call": "11/05/2024 09:00:00 PM"
+      "AnticipatedCall": "2024-11-05T21:00:00"
     },
     {
       "State": "Nevada",
@@ -478,7 +461,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "NV",
-      "Anticipated Call": "11/06/2024 12:00:00 AM"
+      "AnticipatedCall": "2024-11-06T00:00:00"
     },
     {
       "State": "New Hampshire",
@@ -492,7 +475,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "NH",
-      "Anticipated Call": "11/05/2024 11:00:00 PM"
+      "AnticipatedCall": "2024-11-05T23:00:00"
     },
     {
       "State": "New Jersey",
@@ -506,7 +489,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "NJ",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T20:00:00M"
     },
     {
       "State": "New Mexico",
@@ -520,7 +503,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "NM",
-      "Anticipated Call": "11/05/2024 09:00:00 PM"
+      "AnticipatedCall": "2024-11-05T21:00:00"
     },
     {
       "State": "New York",
@@ -534,7 +517,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "AL",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T21:00:00"
     },
     {
       "State": "North Carolina",
@@ -548,7 +531,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "NY",
-      "Anticipated Call": "11/09/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-09T20:00:00"
     },
     {
       "State": "North Dakota",
@@ -562,7 +545,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "ND",
-      "Anticipated Call": "11/05/2024 09:00:00 PM"
+      "AnticipatedCall": "2024-11-05T21:00:00"
     },
     {
       "State": "Ohio",
@@ -576,7 +559,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "OH",
-      "Anticipated Call": "11/06/2024 12:00:00 AM"
+      "AnticipatedCall": "2024-11-06T00:00:00"
     },
     {
       "State": "Oklahoma",
@@ -590,7 +573,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Central Time Zone", 
       "Abbreviation": "OK",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T20:00:00"
     },
     {
       "State": "Oregon",
@@ -604,7 +587,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "OR",
-      "Anticipated Call": "11/05/2024 11:00:00 PM"
+      "AnticipatedCall": "2024-11-05T23:00:00"
     },
     {
       "State": "Pennsylvania",
@@ -618,7 +601,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "PA",
-      "Anticipated Call": "11/06/2024 12:00:00 AM"
+      "AnticipatedCall": "2024-11-06T00:00:00"
     },
     {
       "State": "Rhode Island",
@@ -632,7 +615,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "RI",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T20:00:00"
     },
     {
       "State": "South Carolina",
@@ -646,7 +629,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "SC",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T20:00:00"
     },
     {
       "State": "South Dakota",
@@ -660,7 +643,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "SD",
-      "Anticipated Call": "11/05/2024 09:00:00 PM"
+      "AnticipatedCall": "2024-11-05T21:00:00M"
     },
     {
       "State": "Tennessee",
@@ -674,7 +657,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Central Time Zone", 
       "Abbreviation": "TN",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T20:00:00"
     },
     {
       "State": "Texas",
@@ -688,7 +671,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "TX",
-      "Anticipated Call": "11/05/2024 10:00:00 PM"
+      "AnticipatedCall": "2024-11-05T22:00:00"
     },
     {
       "State": "Utah",
@@ -702,7 +685,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "UT",
-      "Anticipated Call": "11/05/2024 11:00:00 PM"
+      "AnticipatedCall": "2024-11-05T23:00:00"
     },
     {
       "State": "Vermont",
@@ -716,7 +699,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "VT",
-      "Anticipated Call": "11/05/2024 07:00:00 PM"
+      "AnticipatedCall": "2024-11-05T19:00:00"
     },
     {
       "State": "Virginia",
@@ -730,7 +713,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "VA",
-      "Anticipated Call": "11/05/2024 08:00:00 PM"
+      "AnticipatedCall": "2024-11-05T20:00:00"
     },
     {
       "State": "Washington",
@@ -744,7 +727,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Pacific Time Zone", 
       "Abbreviation": "WA",
-      "Anticipated Call": "11/05/2024 11:00:00 PM"
+      "AnticipatedCall": "2024-11-05T23:00:00"
     },
     {
       "State": "West Virginia",
@@ -758,7 +741,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "WV",
-      "Anticipated Call": "11/05/2024 07:30 PM"
+      "AnticipatedCall": "2024-11-05T19:30:00"
     },
     {
       "State": "Wisconsin",
@@ -772,7 +755,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Central Time Zone", 
       "Abbreviation": "WI",
-      "Anticipated Call": "11/06/2024 02:00:00 AM"
+      "AnticipatedCall": "2024-11-06T02:00:00"
     },
     {
       "State": "Wyoming",
@@ -786,56 +769,52 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "WY",
-      "Anticipated Call": "11/05/2024 09:00:00 PM"
+      "AnticipatedCall": "2024-11-05T21:00:00"
     }
-  ]
+         ]
   const combinedData = stateClosingTimes.map(stateInfo => {
     const population = statePopulation[stateInfo.State];
     return { ...stateInfo, Population: population };
   });
   
-  console.log(combinedData[3]);
+console.log(combinedData[8])
   
 
   const [usStates, setUsStates] = useState(null);
+  d3.json("/us-states.geojson")
+  .then((data) => {
+    console.log("GeoJSON data loaded:", data);
+    setUsStates(data);
+  })
+  .catch((error) => {
+    console.error("Error loading geojson data:", error);
+  });
+
   
 
   useEffect(() => {
-    d3.json("/us-states.geojson").then(data => {
-      setUsStates(data);
-    }).catch(error => {
-      console.error("Error loading geojson data:", error);
-    });
-  }, []);
-
-  useEffect(() => {
-    if (!usStates || !usStates.features) return; // Wait until `usStates` and `features` are available
-
+    if (!usStates || !usStates.features) return; // Ensure `usStates` and `features` are loaded
+  
     // Clear any previous SVG if present
     d3.select("#map").select("svg").remove();
+    
     const width = 960;
     const height = 600;
-
     const svg = d3.select("#map")
       .append("svg")
       .attr("width", width)
       .attr("height", height);
-
+  
     const projection = d3.geoAlbersUsa().scale(1000).translate([width / 2, height / 2]);
     const path = d3.geoPath().projection(projection);
-   
-    // Create a mapping for the states from combinedData for quick lookup
+  
     const stateDataMap = new Map(combinedData.map(d => [d.State, d]));
-
-        // Parse each state’s `TimeSixteen` and `DaySixteen` into a Date object and sort them chronologically
-        combinedData.forEach(d => {
-          d.announcementTime = new Date(`${d.DayTwenty}T${d.TimeTwenty}`);
-        });
-    
-        combinedData.sort((a, b) => a.announcementTime - b.announcementTime);  // Sort states by announcement time
-    
-        // Calculate total duration (in milliseconds) for the entire animation
-
+  
+    // Find the earliest and latest AnticipatedCall times
+    const startTime = Math.min(...combinedData.map(d => new Date(d.AnticipatedCall).getTime()));
+    const endTime = Math.max(...combinedData.map(d => new Date(d.AnticipatedCall).getTime()));
+    const duration = endTime - startTime;
+  
     // Tooltip element
     const tooltip = d3.select("body")
       .append("div")
@@ -847,32 +826,20 @@ const USMap = () => {
       .style("border-radius", "4px")
       .style("pointer-events", "none")
       .style("opacity", 0);
-
-    // Draw the map
+  
+    // Draw the map with initial color
     svg.selectAll("path")
       .data(usStates.features)
       .enter()
       .append("path")
       .attr("d", path)
-      .attr("fill", (d) => {
-        const stateName = d.properties.NAME;
-        const stateData = stateDataMap.get(stateName);
-
-        // Determine color based on WinnerSixteen and WinnerTwenty
-        if (stateData) {
-          const WinnerTwenty = stateData.WinnerTwenty.slice(-1);  // Get last character
-    // Get last character
-          return (WinnerTwenty === "R" ) ? "red" : 
-          (WinnerTwenty === "D" ) ? "blue" : "white";
-        }
-        return "#ccc"; // Default color if no data
-      })
+      .attr("fill", "#ccc")
       .attr("stroke", "#a45b8e")
       .attr("stroke-width", 1.5)
       .on("mouseover", function (event, d) {
         const stateName = d.properties.NAME;
         const stateData = stateDataMap.get(stateName);
-
+  
         if (stateData) {
           tooltip
             .transition()
@@ -887,10 +854,10 @@ const USMap = () => {
             `)
             .style("left", (event.pageX + 10) + "px")
             .style("top", (event.pageY - 28) + "px");
-
+  
           d3.select(this)
             .attr("stroke", "#333")
-            .attr("stroke-width", 3);  
+            .attr("stroke-width", 3);
         }
       })
       .on("mousemove", (event) => {
@@ -903,19 +870,44 @@ const USMap = () => {
           .transition()
           .duration(500)
           .style("opacity", 0);
-
+  
         d3.select(this)
           .attr("stroke", "#a45b8e")
-          .attr("stroke-width", 1.5);  // Reset the state boundary style
+          .attr("stroke-width", 1.5);
       });
-   
+  
+    // Start the animation
+    const timer = d3.timer((elapsed) => {
+      // Calculate the current time based on the elapsed duration
+      const currentTime = startTime + (elapsed / duration) * (endTime - startTime);
+  
+      // Fill each state as its AnticipatedCall time passes
+      svg.selectAll("path")
+        .attr("fill", function(d) {
+          const stateName = d.properties.NAME;
+          const stateData = stateDataMap.get(stateName);
+  
+          if (stateData && new Date(stateData.AnticipatedCall).getTime() <= currentTime) {
+            // Color based on WinnerTwenty
+            const winner = stateData.WinnerTwenty.slice(-1);
+            return winner === "R" ? "red" : winner === "D" ? "blue" : "white";
+          }
+          return "#ccc"; // Default color before anticipated call
+        });
+  
+      // Stop the timer after the last state has been filled
+      if (currentTime >= endTime) {
+        timer.stop();
+      }
+    });
+  
   }, [usStates]);
 
   return<div>
     <h1>Historical Electoral Map Here (2020)</h1>
-    <div id="map" style={{ width: "100%", height: "100%" }}></div>;
+    <div id="map" style={{ width: "100%", height: "100%" }}></div>
   </div>
   
 };
 
-export default USMap;
+export default HistoricalMap;

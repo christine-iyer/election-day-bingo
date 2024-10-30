@@ -56,7 +56,7 @@ export default function Home() {
 
   return (
     <div>
-
+    <Clock/>
 
       <div>
       <h1>Interactive U.S. Map</h1>
@@ -95,7 +95,7 @@ export default function Home() {
           </li>
         ))}
       </ul>
-      <Clock/>
+  
       </div>
     
 
