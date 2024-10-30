@@ -11,7 +11,7 @@
     "WinnerTwenty": "Trump R",
     "Zone": "Central Time Zone", 
     "Abbreviation": "AL",
-    "Anticipated Call": "11/05/2024 08:00:00 PM"
+    "AnticipatedCall": "2024-11-05T20:00:00"
   },
   {
     "State": "Alaska",
@@ -151,7 +151,7 @@
     "WinnerTwenty": "Biden D",
     "Zone": "Eastern Time Zone", 
     "Abbreviation": "GA",
-    "AnticipatedCall": "2024-11-09T21:00:00M"
+    "AnticipatedCall": "2024-11-09T21:00:00"
   },
   {
     "State": "Hawaii",
@@ -431,7 +431,7 @@
     "WinnerTwenty": "Biden D",
     "Zone": "Eastern Time Zone", 
     "Abbreviation": "NJ",
-    "AnticipatedCall": "2024-11-05T20:00:00M"
+    "AnticipatedCall": "2024-11-05T20:00:00"
   },
   {
     "State": "New Mexico",
@@ -585,7 +585,7 @@
     "WinnerTwenty": "Trump R",
     "Zone": "Mountain Time Zone", 
     "Abbreviation": "SD",
-    "AnticipatedCall": "2024-11-05T21:00:00M"
+    "AnticipatedCall": "2024-11-05T21:00:00"
   },
   {
     "State": "Tennessee",
