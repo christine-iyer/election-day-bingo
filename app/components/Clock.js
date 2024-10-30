@@ -6,7 +6,8 @@ function Clock() {
   return (
     <div>
     
-      <button style ={{margin: "120px", height: '120px', width: '120px'}}onClick={alert("Nice")}>+</button>
+<h1>Tick Tok</h1>
+
 <div className="clock"></div>
     </div>
   );
