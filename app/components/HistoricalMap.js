@@ -777,7 +777,7 @@ const HistoricalMap = () => {
     return { ...stateInfo, Population: population };
   });
   
-console.log(combinedData[8])
+console.log(combinedData)
   
 
   const [usStates, setUsStates] = useState(null);
