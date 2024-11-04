@@ -86,7 +86,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Central Time Zone", 
       "Abbreviation": "AL",
-      "HouseNotes": " ",
+      "HouseNotes": "D-2 Shomari Figures(D) and Caroleene Dobson(R) The fight to represent Alabama’s second congressional district is particularly interesting. The district has been dominated by Republicans for the past six decades - but the US Supreme Court ordered it to be redrawn last year. In its ruling, the nation’s top court concluded that the southern state’s congressional map had likely been drawn in a discriminatory manner, concentrating black voters into just one of its seven districts. The redrawn district is now majority black and it has set the stage for a highly competitive race between two lawyers and political newcomers. ",
       "SenateNotes": " ",
       "Anticipated Call": "11/05/2024 08:00:00 PM"
     },
