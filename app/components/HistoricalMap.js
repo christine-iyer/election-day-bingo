@@ -102,7 +102,7 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Hawaii-Aleutian Time Zone",
       "Abbreviation": "AK",
-      "HouseNotes": " ",
+      "HouseNotes": "AK at-large 	Mary Peltola(D) Eric Hafner(D) Nicholas Begich(R) John Howe(Alaskan Independence Party) Lady Donna Dutchess(Nonpartisan)(Write-in). Can't wait for this one.",
       "SenateNotes": " ",
       "Anticipated Call": "11/06/2024 12:00:00 AM"
     },
@@ -118,7 +118,7 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "AZ",
-      "HouseNotes": " ",
+      "HouseNotes": "D-1 Amish Shah(D) David Schweikert(R) D-6 Kirsten Engel(D) Juan Ciscomani(R)",
       "SenateNotes": "Ruben Gallego(D) Kari Lake (R), Democratic Rep. Ruben Gallego and Republican Kari Lake are duking it out for Sen. Kyrsten Sinema's seat in the upper chamber, after the first-term independent opted not to seek reelection, facing an uphill climb in the battleground state. Gallego, 44, is a former Marine who was first elected to the House in 2014 and represents a district that includes parts of Phoenix and Glendale. The progressive lawmaker has worked to court voters in the middle, while Lake, who narrowly lost a hard-right campaign for governor in 2022, has worked to do the same. Lake, 55, is a former news anchor and close ally of former President Donald Trump. She has been a vocal election denier regarding the outcome of  both her gubernatorial race and Trump's 2020 matchup against President Biden. But Lake has tried to reel in her message during the Senate campaign, albeit inconsistently, earning the backing of the party's reluctant establishment along the way. The Cook Political Report ranks the race as leaning toward Democrats. Before Sen. Kyrsten Sinema won her Senate race in 2018, a Democrat hadn't won a Senate seat in Arizona in three decades. Sinema left the Democratic Party in 2022.",
       "Anticipated Call": "11/06/2024 03:00:00 AM"
     },
@@ -150,8 +150,8 @@ const USMap = () => {
       "WinnerTwenty": "Biden D",
       "Zone": "Pacific Time Zone", 
       "Abbreviation": "CA",
-      "HouseNotes": "D-45, The other big prize on Tuesday is California, which is home to at least a half dozen highly competitive races, four of them GOP-held seats that Biden would have carried with relative ease in 2020 and another he would have lost by only a single point. Harris’ ascension to the top of the Democratic ticket could give her party a home-state boost, though Republicans, as noted above, see Trump improving his standing in states such as California and New York, which are not competitive at the presidential level despite the former president’s pronouncements to the contrary. One of the best barometers of the political environment in California is the 45th District, based in Orange and Los Angeles counties, with a constituency that is nearly 40% Asian American and more than 30% Latino. The seat is currently held by GOP Rep. Michelle Steel, a Korean immigrant first elected in 2020, who is facing off against Democrat Derek Tran, a US Army veteran and first-generation Vietnamese American. Orange County has signaled the political shifts of the Trump era, with Democrats making gains there during the 2018 midterms but losing ground two years later as the GOP clawed back House seats despite the president’s loss. Another point to keep in mind: If the majority comes down to California, the country could be waiting a while as the state takes time to count ballots.",
-      "SenateNotes": " ",
+      "HouseNotes": "D-45 Derek Tran(D) Michelle Steel(R), The other big prize on Tuesday is California, which is home to at least a half dozen highly competitive races, four of them GOP-held seats that Biden would have carried with relative ease in 2020 and another he would have lost by only a single point. Harris’ ascension to the top of the Democratic ticket could give her party a home-state boost, though Republicans, as noted above, see Trump improving his standing in states such as California and New York, which are not competitive at the presidential level despite the former president’s pronouncements to the contrary. One of the best barometers of the political environment in California is the 45th District, based in Orange and Los Angeles counties, with a constituency that is nearly 40% Asian American and more than 30% Latino. The seat is currently held by GOP Rep. Michelle Steel, a Korean immigrant first elected in 2020, who is facing off against Democrat Derek Tran, a US Army veteran and first-generation Vietnamese American. Orange County has signaled the political shifts of the Trump era, with Democrats making gains there during the 2018 midterms but losing ground two years later as the GOP clawed back House seats despite the president’s loss. Another point to keep in mind: If the majority comes down to California, the country could be waiting a while as the state takes time to count ballots.",
+      "SenateNotes": "Adam Schiff(D) Steve Garvey(R)",
       "Anticipated Call": "11/05/2024 11:00:00PM"
     },
     {
@@ -183,7 +183,7 @@ const USMap = () => {
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "CT",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Chris Murphy(D) Matt Corey(R)",
       "Anticipated Call": "11/05/2024 08:00:00 PM"
     },
     {
@@ -199,7 +199,7 @@ const USMap = () => {
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "DE",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Lisa Blunt Rochester(D) Eric Hansen(R)",
       "Anticipated Call": "11/05/2024 08:00:00 PM"
     },
     {
@@ -231,7 +231,7 @@ const USMap = () => {
       "Zone": "Central Time Zone", 
       "Abbreviation": "FL",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Debbie Mucarsel-Powell(D) Rick Scott(R)",
       "Anticipated Call": "11/06/2024 12:00:00 AM"
     },
     {
@@ -263,7 +263,7 @@ const USMap = () => {
       "Zone": "Hawaii-Aleutian Time Zone", 
       "Abbreviation": "HI",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Mazie Horono(D) Bob McDermott(R)",
       "Anticipated Call": "11/06/2024 12:00:00 AM"
     },
     {
@@ -311,7 +311,7 @@ const USMap = () => {
       "Zone": "Central Time Zone", 
       "Abbreviation": "IN",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Valerie McCray(D) Jim Banks(R)",
       "Anticipated Call": "11/05/2024 09:00:00 PM"
     },
     {
@@ -391,7 +391,7 @@ const USMap = () => {
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "ME",
       "HouseNotes": "D2-The Trump crossover seat,  Jared Golden (D)Democratic Rep. Jared Golden has crafted a moderate profile by challenging his party on issues ranging from spending to immigration. The tattooed 42-year-old Marine Corps veteran has distanced himself from Harris, declining to endorse the Democratic nominee, an acknowledgement that he will need to appeal to Trump voters in a district the GOP nominee would have won by 6 points four years ago and is favored to carry again. Golden’s opponent is the Trump-endorsed Austin Theriault, a 30-year-old state representative and former NASCAR driver, who Republicans hope will be able to appeal across the massive, mostly rural district, which stretches from rocky shorelines in the south all the way north to the state’s border with Canada. Gun control has emerged as a key issue in the race after Golden reversed his opposition to an assault weapons ban following the 2023 mass shooting in Lewiston – the district’s biggest city – that killed 18 people. Theriault has accused his Democratic rival of having “flip-flopped on the Second Amendment. Another potential wild card is Maine’s use of ranked-choice voting, which could come into play if neither candidate receives a majority of votes on Election Day with an independent candidate running a write-in campaign. More than $34 million has been poured into the race since early September, with Democrats outpacing Republicans by nearly $3 million, according to data from AdImpact. ",
-      "SenateNotes": " ",
+      "SenateNotes": "Angus King(I) Demi Kouzounas(R). I am Demi Kouzounas and I approve this message beCause I'M RUN-NING Feh YYOOUU!",
       "Anticipated Call": "11/06/2024 02:00:00 AM"
     },
     {
@@ -407,7 +407,7 @@ const USMap = () => {
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "MD",
       "HouseNotes": " ",
-      "SenateNotes": "Gov. Larry Hogan (R) Angela Alsobrooks.  are facing off in a race that's grown unexpectedly competitive in deep-blue Maryland. The race kicked off after Sen. Ben Cardin announced last year that he would retire, teeing up what was expected to be an easy Democratic victory in the state. But Hogan's late entrance into the race cast that victory into question, making a GOP flip of the seat possible. The popular Republican governor, who served from 2015 to 2023, has widespread name recognition in the state and left office with high approval ratings. He's often set himself apart from his party, being known to criticize former President Donald Trump. And he's campaigned on working across the aisle for Marylanders, while pledging to be a pro-choice Republican. Meanwhile, Democratic groups have highlighted across the airwaves Hogan's past statements personally opposing abortion and his decision to veto legislation as governor that would have expanded abortion access in Maryland. A victory by Hogan, 68, would mark the first time a Republican has won a Maryland Senate seat in nearly four decades. Alsobrooks, a former prosecutor, and her campaign have emphasized that despite Hogan's bipartisan framing, the seat could dictate control of the Senate, and with it, the ability to spearhead any Democratic priorities. Alsobrooks, 53, would be the first Black woman to represent the state in the Senate, and the fourth Black woman to serve in the Senate in its history. The Cook Political Report has rated the race as a likely win for Democrats.",
+      "SenateNotes": "Angela Alsobrooks(D) Gov. Larry Hogan(R) are facing off in a race that's grown unexpectedly competitive in deep-blue Maryland. The race kicked off after Sen. Ben Cardin announced last year that he would retire, teeing up what was expected to be an easy Democratic victory in the state. But Hogan's late entrance into the race cast that victory into question, making a GOP flip of the seat possible. The popular Republican governor, who served from 2015 to 2023, has widespread name recognition in the state and left office with high approval ratings. He's often set himself apart from his party, being known to criticize former President Donald Trump. And he's campaigned on working across the aisle for Marylanders, while pledging to be a pro-choice Republican. Meanwhile, Democratic groups have highlighted across the airwaves Hogan's past statements personally opposing abortion and his decision to veto legislation as governor that would have expanded abortion access in Maryland. A victory by Hogan, 68, would mark the first time a Republican has won a Maryland Senate seat in nearly four decades. Alsobrooks, a former prosecutor, and her campaign have emphasized that despite Hogan's bipartisan framing, the seat could dictate control of the Senate, and with it, the ability to spearhead any Democratic priorities. Alsobrooks, 53, would be the first Black woman to represent the state in the Senate, and the fourth Black woman to serve in the Senate in its history. The Cook Political Report has rated the race as a likely win for Democrats.",
       "Anticipated Call": "11/05/2024 08:00:00 PM"
     },
     {
@@ -423,7 +423,7 @@ const USMap = () => {
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "MA",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Elizabeth Warren(D) John Deaton(R)",
       "Anticipated Call": "11/05/2024 08:00:00 PM"
     },
     {
@@ -455,7 +455,7 @@ const USMap = () => {
       "Zone": "Central Time Zone", 
       "Abbreviation": "MI",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Amy Klobuchar(D) Royce White(R)",
       "Anticipated Call": "11/06/2024 12:00:00 AM"
     },
     {
@@ -471,7 +471,7 @@ const USMap = () => {
       "Zone": "Central Time Zone", 
       "Abbreviation": "MS",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Ty Pinkins(D) Roger Wicker(R)",
       "Anticipated Call": "11/05/2024 08:00:00 PM"
     },
     {
@@ -487,7 +487,7 @@ const USMap = () => {
       "Zone": "Central Time Zone", 
       "Abbreviation": "MO",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Lucas Kunce(D) Josh Hawley(R-Faggot)",
       "Anticipated Call": "11/05/2024 10:00:00 PM"
     },
     {
@@ -518,8 +518,8 @@ const USMap = () => {
       "WinnerTwenty": "Trump R",
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "NE",
-      "HouseNotes": "D-2, the Biden crossover seat. to GOP Rep. Don Bacon, a centrist retired Air Force officer who has been a top target for Democrats ever since he flipped the district in 2016, defeating Rep. Brad Ashford by a little more than a percentage point. He faces a rematch with Democrat Tony Vargas, a 40-year-old state senator vying to be Nebraska’s first Latino member of Congress. In 2022, Bacon defeated Vargas by less than 3 points. While the district known as Nebraska’s “blue dot” appears to be leaning toward Harris in the race for Electoral College votes, the contest at the House level looks more competitive. That means to survive his latest challenge, Bacon will likely need to draw a decent slice of support from Harris voters to punch his ticket back to Capitol Hill for a fifth term.",
-      "SenateNotes": "Deb Fischer(D) Dan Osborn(I) Sen. Deb Fischer's reelection appeared guaranteed until just weeks before the election, when a string of polls revealed a surprisingly competitive race between the incumbent and independent Dan Osborn. Osborn, a Navy veteran, mechanic and union leader, has received an onslaught of outside funding, forcing Republicans to redouble their efforts in a race that was thought to be an easy win. The 49-year-old independent is a political newcomer who's leaned into a populist message, while billing his opponent as an establishment politician controlled by corporate interests. Fischer is seeking a third term in the Senate, where she served on the powerful armed services and appropriations committees. The 73-year-old, who has a background as a cattle rancher, has leaned on an endorsement from Trump in recent weeks, while painting her independent opponent as a Democrat in disguise. Osborn has pledged not to caucus with either Democrats or Republicans in the Senate. The Cornhusker State is home to nearly twice as many registered Republicans as Democrats, and Trump won Nebraska by nearly 20 points in 2020. But Nebraska is also home to nearly as many nonpartisan voters as Democrats. And with no Democrat in the race, the two voting groups could come together to launch a formidable challenge against the Republican incumbent. The Cook Political Report rates the race as lean Republican, moving it from likely Republican on Oct. 21. ",
+      "HouseNotes": "D-2, Tony Vargas (D) Don Bacon(R) the Biden crossover seat. to GOP Rep. Don Bacon(R), a centrist retired Air Force officer who has been a top target for Democrats ever since he flipped the district in 2016, defeating Rep. Brad Ashford by a little more than a percentage point. He faces a rematch with Democrat Tony Vargas, a 40-year-old state senator vying to be Nebraska’s first Latino member of Congress. In 2022, Bacon defeated Vargas by less than 3 points. While the district known as Nebraska’s “blue dot” appears to be leaning toward Harris in the race for Electoral College votes, the contest at the House level looks more competitive. That means to survive his latest challenge, Bacon will likely need to draw a decent slice of support from Harris voters to punch his ticket back to Capitol Hill for a fifth term.",
+      "SenateNotes": "2 Senate races. Preston Love(D) Pete Ricketts(R, incumbent) Deb Fischer(D) Dan Osborn(I) Sen. Deb Fischer's reelection appeared guaranteed until just weeks before the election, when a string of polls revealed a surprisingly competitive race between the incumbent and independent Dan Osborn. Osborn, a Navy veteran, mechanic and union leader, has received an onslaught of outside funding, forcing Republicans to redouble their efforts in a race that was thought to be an easy win. The 49-year-old independent is a political newcomer who's leaned into a populist message, while billing his opponent as an establishment politician controlled by corporate interests. Fischer is seeking a third term in the Senate, where she served on the powerful armed services and appropriations committees. The 73-year-old, who has a background as a cattle rancher, has leaned on an endorsement from Trump in recent weeks, while painting her independent opponent as a Democrat in disguise. Osborn has pledged not to caucus with either Democrats or Republicans in the Senate. The Cornhusker State is home to nearly twice as many registered Republicans as Democrats, and Trump won Nebraska by nearly 20 points in 2020. But Nebraska is also home to nearly as many nonpartisan voters as Democrats. And with no Democrat in the race, the two voting groups could come together to launch a formidable challenge against the Republican incumbent. The Cook Political Report rates the race as lean Republican, moving it from likely Republican on Oct. 21. ",
       "Anticipated Call": "11/05/2024 09:00:00 PM"
     },
     {
@@ -535,7 +535,7 @@ const USMap = () => {
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "NV",
       "HouseNotes": " ",
-      "SenateNotes": "Jacky Rosen (D) Sam Brown (R) Sen. Jacky Rosen is looking to hold onto her seat in the Silver State, facing her first reelection bid in the state that was home to among the closest Senate races in the country in 2022. Rosen is facing off against Sam Brown, a 40-year-old businessman and former Army captain. And although Republicans haven't won a Senate race in the Silver State since 2012, they flipped the governor's mansion in the last election, suggesting that the state's races could be in play for the GOP. But Rosen, 67, has appeared to have a significant edge over Brown since Vice President Kamala Harris entered the presidential race, after President Biden had struggled to garner support in the state. The Cook Political Report in August changed its rating of the Nevada Senate race from a toss-up to lean Democrat after Harris entered the race, noting that the margin that Senate candidates in battleground states now have to outperform the top of the ticket has shrunk, and has been especially pronounced in Nevada. ",
+      "SenateNotes": "Jacky Rosen(D) Sam Brown(R) Sen. Jacky Rosen is looking to hold onto her seat in the Silver State, facing her first reelection bid in the state that was home to among the closest Senate races in the country in 2022. Rosen is facing off against Sam Brown, a 40-year-old businessman and former Army captain. And although Republicans haven't won a Senate race in the Silver State since 2012, they flipped the governor's mansion in the last election, suggesting that the state's races could be in play for the GOP. But Rosen, 67, has appeared to have a significant edge over Brown since Vice President Kamala Harris entered the presidential race, after President Biden had struggled to garner support in the state. The Cook Political Report in August changed its rating of the Nevada Senate race from a toss-up to lean Democrat after Harris entered the race, noting that the margin that Senate candidates in battleground states now have to outperform the top of the ticket has shrunk, and has been especially pronounced in Nevada. ",
       "Anticipated Call": "11/06/2024 12:00:00 AM"
     },
     {
@@ -567,7 +567,7 @@ const USMap = () => {
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "NJ",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Andy Kim(D) Curtis Bashaw(R) are running to replace the Menendez seat.",
       "Anticipated Call": "11/05/2024 08:00:00 PM"
     },
     {
@@ -583,7 +583,7 @@ const USMap = () => {
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "NM",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Martin Heinrich(D) Nella Domenici(R)",
       "Anticipated Call": "11/05/2024 09:00:00 PM"
     },
     {
@@ -599,7 +599,7 @@ const USMap = () => {
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "AL",
       "HouseNotes": "D-19 The lackluster showing by Democrats in New York during the 2022 midterm elections cost the party any chance it had at keeping control of the House. Democrats are hoping the state will lay the groundwork this year for the party’s return to the majority. Thanks in part to a slightly more favorable map after state lawmakers approved new lines, Democrats are looking to pick up at least two seats in the Empire State, with the potential for more. A top target is the 19th District, which stretches from the Hudson Valley to the Finger Lakes. It’s currently represented by GOP Rep. Marc Molinaro, who won the seat by less than 2 points in 2022 and faces a rematch with Democrat Josh Riley, a lawyer who served as counsel to former. Sen. Al Franken on the Senate Judiciary Committee. The contest has seen the most spending of any House race over the past two months – $38.5 million – with Democrats outspending Republicans by more than $5 million. The presidential race is also poised to play a factor in the 19th District, where voters would have backed Biden by more than 4 points in 2020. But Republicans also believe that Trump is running stronger in blue states than he did four years ago. ",
-      "SenateNotes": " ",
+      "SenateNotes": "Kirsten Gillibrand(D) Mike Sapraicone(R)",
       "Anticipated Call": "11/05/2024 08:00:00 PM"
     },
     {
@@ -631,7 +631,7 @@ const USMap = () => {
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "ND",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Katrina Christiansen(D) Kevin Cramer(R)",
       "Anticipated Call": "11/05/2024 09:00:00 PM"
     },
     {
@@ -695,7 +695,7 @@ const USMap = () => {
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "PA",
       "HouseNotes": "D-10, GOP Rep. Scott Perry has not shied away from controversy during his six terms in the US House, including his support for Trump’s efforts to overturn the 2020 election results, which led to the FBI seizing the congressman’s cell phone. Even as the former chair of the House Freedom Caucus embraces his firebrand status, he has managed to fend off Democratic challengers with relative ease, winning his most recent race in 2022 by nearly 8 points despite the swirl of scrutiny around his actions. That strategy is facing its toughest test this year in the form of a challenge from Democrat Janelle Stelson, a political newcomer but familiar face to many Central Pennsylvania residents. Stelson spent decades as a news anchor and reporter in the region and is now trying to turn onetime viewers into voters. Democrats see Stelson’s profile, combined with her prolific fundraising and the changing politics of the district – Trump would have won it by 4 points in 2020, but Democrat Josh Shapiro carried it by a double digits during his 2022 run for governor – as signs that Perry is potentially vulnerable. Stelson also scored the endorsement of five former GOP members of Congress who served with Perry as she seeks to appeal to moderate voters. Both parties have ramped up their spending here in the final weeks, signaling a tight race that could offer a glimpse about the level of support for MAGA-aligned candidates in districts that appear to be trending toward the political middle. ",
-      "SenateNotes": "Bob Casey(D)  vs. Dave McCormick(R),Dave McCormick is working to unseat Democratic Sen. Bob Casey, who's been in the Senate since 2007, in battleground Pennsylvania. McCormick, 59, is a combat veteran and former chief executive of a major hedge fund who also sought the Republican nomination to represent Pennsylvania in the Senate in 2022, when he lost to Mehmet Oz. He's campaigned on being a change agent to the status quo, billing Casey as an establishment politician. And he's drawn a line between his position on abortion and Casey's, which he calls extreme. McCormick opposes abortion except in the case of rape, incest or to save the life of the mother, while also arguing that the issue should be left up to states and opposing a national abortion ban. Casey — who once called himself a pro-life Democrat — now supports the protections under Roe v. Wade, which guaranteed a right to abortion prior to fetal viability. Seeking a fourth term in the upper chamber, Casey, 64, is a former state auditor general and treasurer. The son of former Pennsylvania Gov. Bob Casey Sr., he's an institution in the Keystone State and has a reputation as a moderate Democrat. Casey has billed his opponent as an out-of-touch carpetbagger, hammering McCormick over his previous Connecticut residency. The Cook Political Report rates the race as a toss-up, changing it from lean Democrat on Oct. 21. CBS News poll showed Casey leading in September.",
+      "SenateNotes": "Bob Casey(D) Dave McCormick(R),Dave McCormick is working to unseat Democratic Sen. Bob Casey, who's been in the Senate since 2007, in battleground Pennsylvania. McCormick, 59, is a combat veteran and former chief executive of a major hedge fund who also sought the Republican nomination to represent Pennsylvania in the Senate in 2022, when he lost to Mehmet Oz. He's campaigned on being a change agent to the status quo, billing Casey as an establishment politician. And he's drawn a line between his position on abortion and Casey's, which he calls extreme. McCormick opposes abortion except in the case of rape, incest or to save the life of the mother, while also arguing that the issue should be left up to states and opposing a national abortion ban. Casey — who once called himself a pro-life Democrat — now supports the protections under Roe v. Wade, which guaranteed a right to abortion prior to fetal viability. Seeking a fourth term in the upper chamber, Casey, 64, is a former state auditor general and treasurer. The son of former Pennsylvania Gov. Bob Casey Sr., he's an institution in the Keystone State and has a reputation as a moderate Democrat. Casey has billed his opponent as an out-of-touch carpetbagger, hammering McCormick over his previous Connecticut residency. The Cook Political Report rates the race as a toss-up, changing it from lean Democrat on Oct. 21. CBS News poll showed Casey leading in September.",
       "Anticipated Call": "11/06/2024 12:00:00 AM"
     },
     {
@@ -711,7 +711,7 @@ const USMap = () => {
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "RI",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Sheldon Whitehouse(D) Patricia Morgan(R)",
       "Anticipated Call": "11/05/2024 08:00:00 PM"
     },
     {
@@ -759,7 +759,7 @@ const USMap = () => {
       "Zone": "Central Time Zone", 
       "Abbreviation": "TN",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Gloria Johnson(D) Marsha Blackburn(R)",
       "Anticipated Call": "11/05/2024 08:00:00 PM"
     },
     {
@@ -791,7 +791,7 @@ const USMap = () => {
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "UT",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Caroline Gleich(D) John Curtis(R) are competing for Romney's seat.",
       "Anticipated Call": "11/05/2024 11:00:00 PM"
     },
     {
@@ -807,7 +807,7 @@ const USMap = () => {
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "VT",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Bernie Sanders(D) Gerald Malloy(R)",
       "Anticipated Call": "11/05/2024 07:00:00 PM"
     },
     {
@@ -823,7 +823,7 @@ const USMap = () => {
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "VA",
       "HouseNotes": "D1- Vindman(D) and Anderson(R) are both Army veterans and lawyers. In 2019, Vindman found himself at the center of Trump’s first impeachment when the then-ethics lawyer for the National Security Council and his twin brother, Alexander – a director on the NSC – sounded the alarm about a phone call between the president and his Ukrainian counterpart, Volodymyr Zelensky. D2-anchored by Virginia Beach, where GOP Rep. Jen Kiggans is facing off against fellow Navy veteran Missy Cotter Smasal(D). If either party were to capture both races, that could foreshadow a favorable environment.",
-      "SenateNotes": " ",
+      "SenateNotes": "Tim Kaine(D) Hung Cao(R)",
       "Anticipated Call": "11/05/2024 08:00:00 PM"
     },
     {
@@ -839,7 +839,7 @@ const USMap = () => {
       "Zone": "Pacific Time Zone", 
       "Abbreviation": "WA",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Maria Cantwell(D) Raul Garcia(R)",
       "Anticipated Call": "11/05/2024 11:00:00 PM"
     },
     {
@@ -855,7 +855,7 @@ const USMap = () => {
       "Zone": "Eastern Time Zone", 
       "Abbreviation": "WV",
       "HouseNotes": " ",
-      "SenateNotes": "Gov.Jim Justice(R) vs. Glenn Elliott(D). Joe Manchin's seat. Senate Democrats have all but ceded Sen. Joe Manchin's seat to Republicans after he announced he wouldn't seek reelection in the red state. Democrat Glenn Elliott, a former mayor of Wheeling, West Virginia, is facing off against current Republican Gov. Jim Justice, who is almost guaranteed a win in the Mountain State. Even before Manchin left the race, the seat was expected to pose a challenge for Democrats once the popular GOP governor entered the race. Senate Minority Leader Mitch McConnell himself encouraged Justice to run and seize the opportunity to unseat Manchin, who formerly served as governor and has represented West Virginia in the Senate since 2010. Manchin, a moderate who has often been a thorn in the side of Democratic leadership, opted to leave the party and register as an independent in May.",
+      "SenateNotes": "Glenn Elliott(D) Gov.Jim Justice(R). Joe Manchin's seat. Senate Democrats have all but ceded Sen. Joe Manchin's seat to Republicans after he announced he wouldn't seek reelection in the red state. Democrat Glenn Elliott, a former mayor of Wheeling, West Virginia, is facing off against current Republican Gov. Jim Justice, who is almost guaranteed a win in the Mountain State. Even before Manchin left the race, the seat was expected to pose a challenge for Democrats once the popular GOP governor entered the race. Senate Minority Leader Mitch McConnell himself encouraged Justice to run and seize the opportunity to unseat Manchin, who formerly served as governor and has represented West Virginia in the Senate since 2010. Manchin, a moderate who has often been a thorn in the side of Democratic leadership, opted to leave the party and register as an independent in May.",
       "Anticipated Call": "11/05/2024 07:30 PM"
     },
     {
@@ -887,7 +887,7 @@ const USMap = () => {
       "Zone": "Mountain Time Zone", 
       "Abbreviation": "WY",
       "HouseNotes": " ",
-      "SenateNotes": " ",
+      "SenateNotes": "Scott Morrow(D) John Barrasso(R)",
       "Anticipated Call": "11/05/2024 09:00:00 PM"
     }
   ]
