@@ -10,7 +10,7 @@ const Timeline = ({ events }) => {
      );
 };
 
-const TimelineItem = ({ date, title, description, details }) => {
+const TimelineItem = ({ date, title, description, details, winner }) => {
      const [isExpanded, setIsExpanded] = useState(false);
 
      const truncateText = (text, maxLength) => {
@@ -19,13 +19,13 @@ const TimelineItem = ({ date, title, description, details }) => {
      };
 
      const toggleExpand = () => setIsExpanded(!isExpanded);
-
+     const color = winner === "Biden D" ? "blue" : winner === "Trump R" ? "red" : "black";
      return (
           <div style={{ marginBottom: "20px" }}>
                <p><strong>{date}</strong></p>
                <p>
                     <strong>Title:</strong>{" "}
-                    {isExpanded ? title : truncateText(title, 50)}
+                    <span style={{ color }}>{title}</span>
                </p>
                <p>
                     <strong>Description:</strong>{" "}

@@ -1,6 +1,7 @@
 "use client";
 import { useState} from "react";
 import { getCombinedData } from "./utils/data";
+import { formatTime } from "./utils/helpers";
 import USMap from './components/USMap'
 import BingoCard from "./components/BingoCard"
 import HistoricalMap from './components/HistoricalMap'
@@ -12,12 +13,24 @@ export default function Home() {
   const [name, setName] = useState("");
   const [population, setPopulation] = useState("");
   const [data, setData] = useState([]); // Store fetched data
-  const events = getCombinedData().map((item) => ({
-    date: item.AnticipatedCall,
+  const events = getCombinedData()
+  .map((item) => ({
+    date: formatTime(item.AnticipatedCall),
     title: item.State,
     description: item.HouseNotes,
     details: item.SenateNotes,
-  }));
+    winner: item.WinnerTwenty,
+    time: new Date(`1970-01-01T${item.AnticipatedCall.slice(-11)}`).getTime(), // Parse time
+    }))
+    .sort((a, b) => {
+      // First, sort by time
+      if (a.time !== b.time) {
+        return a.time - b.time;
+      }
+      // If times are equal, sort alphabetically by title (state name)
+      return a.title.localeCompare(b.title);
+    });
+
 
   const fetchData = async () => {
     try {
