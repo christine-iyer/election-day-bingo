@@ -5,7 +5,7 @@ import { formatTime } from "./utils/helpers";
 import USMap from './components/USMap'
 // import BingoCard from "./components/BingoCard"
 import HistoricalMap from './components/HistoricalMap'
-import Timeline from './components/Timeline'
+import ZoneGrid from './components/ZoneGrid'
 
 
 
@@ -17,9 +17,11 @@ export default function Home() {
   .map((item) => ({
     date: formatTime(item.AnticipatedCall),
     title: item.State,
+    abortion: item.AbortionOnBallot,
     description: item.HouseNotes,
     details: item.SenateNotes,
     winner: item.WinnerTwenty,
+    zone: item.Zone,
     time: new Date(`1970-01-01T${item.AnticipatedCall.slice(-11)}`).getTime(), // Parse time
     }))
     .sort((a, b) => {
@@ -110,8 +112,7 @@ export default function Home() {
   
       </div>
       <div>
-      <h1>Timeline</h1>
-      <Timeline events={events} />
+      <ZoneGrid events={events} />
     </div>
     <div>
       <h1>Interactive U.S. Map</h1>

@@ -103,7 +103,7 @@ const stateClosingTimes = [
           "WinnerTwenty": "Biden D",
           "Zone": "E",
           "Abbreviation": "AZ",
-          "HouseNotes": "D-1 Amish Shah(D) v David Schweikert(R). Notes: D-6 Kirsten Engel(D) Juan Ciscomani(R)",
+          "HouseNotes": "Amish Shah(D) v David Schweikert(R). Notes: D-1 Kirsten Engel(D) Juan Ciscomani(R) D-6 ",
           "SenateNotes": "Ruben Gallego(D) v Kari Lake (R). Notes: Rep. Ruben Gallego and Republican Kari Lake are duking it out for Sen. Kyrsten Sinema's seat in the upper chamber, after the first-term independent opted not to seek reelection, facing an uphill climb in the battleground state. Gallego, 44, is a former Marine who was first elected to the House in 2014 and represents a district that includes parts of Phoenix and Glendale. The progressive lawmaker has worked to court voters in the middle, while Lake, who narrowly lost a hard-right campaign for governor in 2022, has worked to do the same. Lake, 55, is a former news anchor and close ally of former President Donald Trump. She has been a vocal election denier regarding the outcome of  both her gubernatorial race and Trump's 2020 matchup against President Biden. But Lake has tried to reel in her message during the Senate campaign, albeit inconsistently, earning the backing of the party's reluctant establishment along the way. The Cook Political Report ranks the race as leaning toward Democrats. Before Sen. Kyrsten Sinema won her Senate race in 2018, a Democrat hadn't won a Senate seat in Arizona in three decades. Sinema left the Democratic Party in 2022.",
           "AbortionOnBallot": "Yes. Proposition 139.",
           "AnticipatedCall": "11/06/2024 03:00:00 AM"
@@ -137,7 +137,7 @@ const stateClosingTimes = [
           "WinnerTwenty": "Biden D",
           "Zone": "G",
           "Abbreviation": "CA",
-          "HouseNotes": "D-45 Derek Tran(D) v Michelle Steel(R). Notes: The other big prize on Tuesday is California, which is home to at least a half dozen highly competitive races, four of them GOP-held seats that Biden would have carried with relative ease in 2020 and another he would have lost by only a single point. Harris’ ascension to the top of the Democratic ticket could give her party a home-state boost, though Republicans, as noted above, see Trump improving his standing in states such as California and New York, which are not competitive at the presidential level despite the former president’s pronouncements to the contrary. One of the best barometers of the political environment in California is the 45th District, based in Orange and Los Angeles counties, with a constituency that is nearly 40% Asian American and more than 30% Latino. The seat is currently held by GOP Rep. Michelle Steel, a Korean immigrant first elected in 2020, who is facing off against Democrat Derek Tran, a US Army veteran and first-generation Vietnamese American. Orange County has signaled the political shifts of the Trump era, with Democrats making gains there during the 2018 midterms but losing ground two years later as the GOP clawed back House seats despite the president’s loss. Another point to keep in mind: If the majority comes down to California, the country could be waiting a while as the state takes time to count ballots.",
+          "HouseNotes": "Derek Tran(D) v Michelle Steel(R). Notes: D-45 the other big prize on Tuesday is California, which is home to at least a half dozen highly competitive races, four of them GOP-held seats that Biden would have carried with relative ease in 2020 and another he would have lost by only a single point. Harris’ ascension to the top of the Democratic ticket could give her party a home-state boost, though Republicans, as noted above, see Trump improving his standing in states such as California and New York, which are not competitive at the presidential level despite the former president’s pronouncements to the contrary. One of the best barometers of the political environment in California is the 45th District, based in Orange and Los Angeles counties, with a constituency that is nearly 40% Asian American and more than 30% Latino. The seat is currently held by GOP Rep. Michelle Steel, a Korean immigrant first elected in 2020, who is facing off against Democrat Derek Tran, a US Army veteran and first-generation Vietnamese American. Orange County has signaled the political shifts of the Trump era, with Democrats making gains there during the 2018 midterms but losing ground two years later as the GOP clawed back House seats despite the president’s loss. Another point to keep in mind: If the majority comes down to California, the country could be waiting a while as the state takes time to count ballots.",
           "SenateNotes": "Adam Schiff(D) v Steve Garvey(R)",
           "AbortionOnBallot": "No",
           "AnticipatedCall": "11/05/2024 11:00:00PM"
@@ -188,7 +188,7 @@ const stateClosingTimes = [
           "WinnerTwenty": "Biden D",
           "Zone": "C",
           "Abbreviation": "DE",
-          "HouseNotes": " ",
+          "HouseNotes": "",
           "SenateNotes": "Lisa Blunt Rochester(D) v Eric Hansen(R)",
           "AbortionOnBallot": "No",
           "AnticipatedCall": "11/05/2024 08:00:00 PM"
@@ -222,7 +222,7 @@ const stateClosingTimes = [
           "WinnerTwenty": "Trump R",
           "Zone": "C",
           "Abbreviation": "FL",
-          "HouseNotes": " ",
+          "HouseNotes": "",
           "SenateNotes": "Debbie Mucarsel-Powell(D) v Rick Scott(R).",
           "AbortionOnBallot": "Yes. Amendment 4.",
           "AnticipatedCall": "11/06/2024 12:00:00 AM"
@@ -307,7 +307,7 @@ const stateClosingTimes = [
           "WinnerTwenty": "Trump R",
           "Zone": "A",
           "Abbreviation": "IN",
-          "HouseNotes": " ",
+          "HouseNotes": "",
           "SenateNotes": "Valerie McCray(D) v Jim Banks(R)",
           "AbortionOnBallot": "No",
           "AnticipatedCall": "11/05/2024 09:00:00 PM"
@@ -324,9 +324,9 @@ const stateClosingTimes = [
           "WinnerTwenty": "Trump R",
           "Zone": "E",
           "Abbreviation": "IA",
-          "HouseNotes": "D-3. Since Trump’s emergence as the leader of the GOP almost a decade ago, the suburbs have been sliding away from Republicans. One of the key questions animating the 2024 election is whether that erosion has stopped – or at the very least been slowed. The answer could be a determining factor in several House races, where Republican incumbents are hoping to avoid headwinds stirred by the former president among suburban voters. Iowa’s 3rd District – home to Des Moines and its suburbs – is one place to keep an eye on for signs of how Trump is faring and the potential impact on down-ballot contests. In 2016, Trump won Dallas County, west of Des Moines, by nearly 10 points. His margin there shrunk to just 2 points against Biden. GOP Rep. Zach Nunn, an Air Force officer, was first elected in 2022 – defeating Democratic Rep. Cindy Axne by about 2,000 votes. He’s running against Lanon Baccam, the son of refugees from Laos who is also a combat veteran and former official in the US Department of Agriculture. If Harris can expand the Democratic Party’s sway in the suburbs, this is a “reach” seat that could be in play for the party on Tuesday.",
+          "HouseNotes": "Lanon Baccam(D) v Zach Nunn(R) D-3. Since Trump’s emergence as the leader of the GOP almost a decade ago, the suburbs have been sliding away from Republicans. One of the key questions animating the 2024 election is whether that erosion has stopped – or at the very least been slowed. The answer could be a determining factor in several House races, where Republican incumbents are hoping to avoid headwinds stirred by the former president among suburban voters. Iowa’s 3rd District – home to Des Moines and its suburbs – is one place to keep an eye on for signs of how Trump is faring and the potential impact on down-ballot contests. In 2016, Trump won Dallas County, west of Des Moines, by nearly 10 points. His margin there shrunk to just 2 points against Biden. GOP Rep. Zach Nunn, an Air Force officer, was first elected in 2022 – defeating Democratic Rep. Cindy Axne by about 2,000 votes. He’s running against Lanon Baccam, the son of refugees from Laos who is also a combat veteran and former official in the US Department of Agriculture. If Harris can expand the Democratic Party’s sway in the suburbs, this is a “reach” seat that could be in play for the party on Tuesday.",
           "SenateNotes": "",
-          "AbortionOnBallot": "No.",
+          "AbortionOnBallot": "No",
           "AnticipatedCall": "11/06/2024 12:00:00 AM"
      },
      {
@@ -392,8 +392,8 @@ const stateClosingTimes = [
           "WinnerTwenty": "Biden D",
           "Zone": "C",
           "Abbreviation": "ME",
-          "HouseNotes": "D-2 Jared Golden(D). The Trump crossover seat. NotesDemocratic Rep. Jared Golden has crafted a moderate profile by challenging his party on issues ranging from spending to immigration. The tattooed 42-year-old Marine Corps veteran has distanced himself from Harris, declining to endorse the Democratic nominee, an acknowledgement that he will need to appeal to Trump voters in a district the GOP nominee would have won by 6 points four years ago and is favored to carry again. Golden’s opponent is the Trump-endorsed Austin Theriault, a 30-year-old state representative and former NASCAR driver, who Republicans hope will be able to appeal across the massive, mostly rural district, which stretches from rocky shorelines in the south all the way north to the state’s border with Canada. Gun control has emerged as a key issue in the race after Golden reversed his opposition to an assault weapons ban following the 2023 mass shooting in Lewiston – the district’s biggest city – that killed 18 people. Theriault has accused his Democratic rival of having “flip-flopped on the Second Amendment. Another potential wild card is Maine’s use of ranked-choice voting, which could come into play if neither candidate receives a majority of votes on Election Day with an independent candidate running a write-in campaign. More than $34 million has been poured into the race since early September, with Democrats outpacing Republicans by nearly $3 million, according to data from AdImpact. ",
-          "SenateNotes": "Angus King(I) v Demi Kouzounas(R). I am Demi Kouzounas and I approve this message beCause I'M RUN-NING Feh YYOOUU!",
+          "HouseNotes": "Jared Golden(D) v Austin Theriault(R). Notes:D-2 The Trump crossover seat. NotesDemocratic Rep. Jared Golden has crafted a moderate profile by challenging his party on issues ranging from spending to immigration. The tattooed 42-year-old Marine Corps veteran has distanced himself from Harris, declining to endorse the Democratic nominee, an acknowledgement that he will need to appeal to Trump voters in a district the GOP nominee would have won by 6 points four years ago and is favored to carry again. Golden’s opponent is the Trump-endorsed Austin Theriault, a 30-year-old state representative and former NASCAR driver, who Republicans hope will be able to appeal across the massive, mostly rural district, which stretches from rocky shorelines in the south all the way north to the state’s border with Canada. Gun control has emerged as a key issue in the race after Golden reversed his opposition to an assault weapons ban following the 2023 mass shooting in Lewiston – the district’s biggest city – that killed 18 people. Theriault has accused his Democratic rival of having “flip-flopped on the Second Amendment. Another potential wild card is Maine’s use of ranked-choice voting, which could come into play if neither candidate receives a majority of votes on Election Day with an independent candidate running a write-in campaign. More than $34 million has been poured into the race since early September, with Democrats outpacing Republicans by nearly $3 million, according to data from AdImpact. ",
+          "SenateNotes": "Angus King(I) v Demi Kouzounas(R). Notes: I am Demi Kouzounas and I approve this message beCause I'M RUN-NING Feh YYOOUU!",
           "AbortionOnBallot": "No",
           "AnticipatedCall": "11/06/2024 02:00:00 AM"
      },
@@ -410,7 +410,7 @@ const stateClosingTimes = [
           "Zone": "C",
           "Abbreviation": "MD",
           "HouseNotes": "",
-          "SenateNotes": "Angela Alsobrooks(D) v Gov. Larry Hogan(R) are facing off in a race that's grown unexpectedly competitive in deep-blue Maryland. The race kicked off after Sen. Ben Cardin announced last year that he would retire, teeing up what was expected to be an easy Democratic victory in the state. But Hogan's late entrance into the race cast that victory into question, making a GOP flip of the seat possible. The popular Republican governor, who served from 2015 to 2023, has widespread name recognition in the state and left office with high approval ratings. He's often set himself apart from his party, being known to criticize former President Donald Trump. And he's campaigned on working across the aisle for Marylanders, while pledging to be a pro-choice Republican. Meanwhile, Democratic groups have highlighted across the airwaves Hogan's past statements personally opposing abortion and his decision to veto legislation as governor that would have expanded abortion access in Maryland. A victory by Hogan, 68, would mark the first time a Republican has won a Maryland Senate seat in nearly four decades. Alsobrooks, a former prosecutor, and her campaign have emphasized that despite Hogan's bipartisan framing, the seat could dictate control of the Senate, and with it, the ability to spearhead any Democratic priorities. Alsobrooks, 53, would be the first Black woman to represent the state in the Senate, and the fourth Black woman to serve in the Senate in its history. The Cook Political Report has rated the race as a likely win for Democrats.",
+          "SenateNotes": "Angela Alsobrooks(D) v Gov. Larry Hogan(R) Notes: They are facing off in a race that's grown unexpectedly competitive in deep-blue Maryland. The race kicked off after Sen. Ben Cardin announced last year that he would retire, teeing up what was expected to be an easy Democratic victory in the state. But Hogan's late entrance into the race cast that victory into question, making a GOP flip of the seat possible. The popular Republican governor, who served from 2015 to 2023, has widespread name recognition in the state and left office with high approval ratings. He's often set himself apart from his party, being known to criticize former President Donald Trump. And he's campaigned on working across the aisle for Marylanders, while pledging to be a pro-choice Republican. Meanwhile, Democratic groups have highlighted across the airwaves Hogan's past statements personally opposing abortion and his decision to veto legislation as governor that would have expanded abortion access in Maryland. A victory by Hogan, 68, would mark the first time a Republican has won a Maryland Senate seat in nearly four decades. Alsobrooks, a former prosecutor, and her campaign have emphasized that despite Hogan's bipartisan framing, the seat could dictate control of the Senate, and with it, the ability to spearhead any Democratic priorities. Alsobrooks, 53, would be the first Black woman to represent the state in the Senate, and the fourth Black woman to serve in the Senate in its history. The Cook Political Report has rated the race as a likely win for Democrats.",
           "AbortionOnBallot": "Yes. Question 1.",
           "AnticipatedCall": "11/05/2024 08:00:00 PM"
      },
@@ -433,7 +433,7 @@ const stateClosingTimes = [
      },
      {
           "State": "Michigan",
-          "ClosingTime": "9:00:00 PM",
+          "ClosingTime": "8:00:00 PM",
           "ElectoralVotes": 15,
           "TimeSixteen": "2:00:00 PM",
           "DaySixteen": "11/28/2016",
@@ -441,12 +441,12 @@ const stateClosingTimes = [
           "TimeTwenty": "5:58:00 PM",
           "DayTwenty": "11/4/2020",
           "WinnerTwenty": "Biden D",
-          "Zone": "E",
+          "Zone": "C",
           "Abbreviation": "MI",
-          "HouseNotes": "Rep. Elissa Slotkin's(D) Notes: Her decision to run for the US Senate in Michigan opened up this Lansing-based seat as a prime pickup opportunity for Republicans in a district Biden would have carried by less than a point in 2020. The race between Curtis Hertel (D) and Tom Barrett (R)– two former state senators – has drawn nearly $37 million in ad spending since early September, the second most of any House race in the country, according to AdImpact data. Barrett, a retired Army helicopter pilot, ran against Slotkin in 2022, losing to the well-known and well-financed incumbent by more than 5 points. While Hertel offers a different resume than Slotkin, a former CIA officer, he has ties to Gretchen Whitmer, Michigan’s popular Democratic governor, and comes from a family with political roots in the state. The neighboring 8th district, where longtime Democratic Rep. Dan Kildee is retiring, is another open-seat target for Republicans, with the party eyeing both Central Michigan races as opportunities to possibly expand its slim majority or offset losses by GOP incumbents elsewhere on the map. Michigan hasn't elected a Republican to the Senate in three decades. But this year's contest is considered among the most competitive of the cycle, with the Cook Political Report rating the race as a toss-up. A CBS News poll showed Slotkin leading in September.",
+          "HouseNotes": "Curtis Hertel(D) v Tom Barrett(R) Notes: Rep. Elissa Slotkin's(D) Notes: Her decision to run for the US Senate in Michigan opened up this Lansing-based seat as a prime pickup opportunity for Republicans in a district Biden would have carried by less than a point in 2020. The race between the two former state senators has drawn nearly $37 million in ad spending since early September, the second most of any House race in the country, according to AdImpact data. Barrett, a retired Army helicopter pilot, ran against Slotkin in 2022, losing to the well-known and well-financed incumbent by more than 5 points. While Hertel offers a different resume than Slotkin, a former CIA officer, he has ties to Gretchen Whitmer, Michigan’s popular Democratic governor, and comes from a family with political roots in the state. The neighboring 8th district, where longtime Democratic Rep. Dan Kildee is retiring, is another open-seat target for Republicans, with the party eyeing both Central Michigan races as opportunities to possibly expand its slim majority or offset losses by GOP incumbents elsewhere on the map. Michigan hasn't elected a Republican to the Senate in three decades. But this year's contest is considered among the most competitive of the cycle, with the Cook Political Report rating the race as a toss-up. A CBS News poll showed Slotkin leading in September.",
           "SenateNotes": "Elissa Slotkin (D) v Mike Rogers (R), In Michigan, former Republican Rep. Mike Rogers and Democratic Rep. Elissa Slotkin are vying for Sen. Debbie Stabenow's long-held seat in the upper chamber. Slotkin, 48, has represented Michigan's 7th District in the House since 2019. The former CIA officer worked in national security-focused posts in both the Bush and Obama administrations and has touted her work across the aisle as a moderate Democrat. The Republican nominee, Rogers, is an Army veteran who represented Michigan's 8th District in the House from 2001 to 2015, and he led the House Intelligence Committee during his last four years in the lower chamber. The 61-year-old also previously worked as an FBI agent and has campaigned on returning to Washington to fix what he sees as the shortcomings of the current administration.   ",
           "AbortionOnBallot": "No",
-          "AnticipatedCall": "11/06/2024 06:00:00 PM"
+          "AnticipatedCall": "11/05/2024 08:00:00 PM"
      },
      {
           "State": "Minnesota",
@@ -460,10 +460,10 @@ const stateClosingTimes = [
           "WinnerTwenty": "Biden D",
           "Zone": "E",
           "Abbreviation": "MI",
-          "HouseNotes": "No.",
+          "HouseNotes": "",
           "SenateNotes": "Amy Klobuchar(D) v Royce White(R)",
           "AbortionOnBallot": "No",
-          "AnticipatedCall": "11/06/2024 12:00:00 AM"
+          "AnticipatedCall": "11/05/2024 09:00:00 PM"
      },
      {
           "State": "Mississippi",
@@ -529,7 +529,7 @@ const stateClosingTimes = [
           "Zone": "E",
           "Abbreviation": "NE",
           "HouseNotes": "D-2 Tony Vargas(D) v Don Bacon(R). Notes: the Biden crossover seat. to GOP Rep. Don Bacon(R), a centrist retired Air Force officer who has been a top target for Democrats ever since he flipped the district in 2016, defeating Rep. Brad Ashford by a little more than a percentage point. He faces a rematch with Democrat Tony Vargas, a 40-year-old state senator vying to be Nebraska’s first Latino member of Congress. In 2022, Bacon defeated Vargas by less than 3 points. While the district known as Nebraska’s “blue dot” appears to be leaning toward Harris in the race for Electoral College votes, the contest at the House level looks more competitive. That means to survive his latest challenge, Bacon will likely need to draw a decent slice of support from Harris voters to punch his ticket back to Capitol Hill for a fifth term.",
-          "SenateNotes": "2 Senate races. Preston Love(D) v Pete Ricketts(R, incumbent) and Deb Fischer(D, incumbent) v Dan Osborn(I) Sen. Deb Fischer's reelection appeared guaranteed until just weeks before the election, when a string of polls revealed a surprisingly competitive race between the incumbent and independent Dan Osborn. Osborn, a Navy veteran, mechanic and union leader, has received an onslaught of outside funding, forcing Republicans to redouble their efforts in a race that was thought to be an easy win. The 49-year-old independent is a political newcomer who's leaned into a populist message, while billing his opponent as an establishment politician controlled by corporate interests. Fischer is seeking a third term in the Senate, where she served on the powerful armed services and appropriations committees. The 73-year-old, who has a background as a cattle rancher, has leaned on an endorsement from Trump in recent weeks, while painting her independent opponent as a Democrat in disguise. Osborn has pledged not to caucus with either Democrats or Republicans in the Senate. The Cornhusker State is home to nearly twice as many registered Republicans as Democrats, and Trump won Nebraska by nearly 20 points in 2020. But Nebraska is also home to nearly as many nonpartisan voters as Democrats. And with no Democrat in the race, the two voting groups could come together to launch a formidable challenge against the Republican incumbent. The Cook Political Report rates the race as lean Republican, moving it from likely Republican on Oct. 21. ",
+          "SenateNotes": "Preston Love(D) v Pete Ricketts(R, incumbent) and Deb Fischer(D, incumbent) v Dan Osborn(I) 2 Senate races. Sen. Deb Fischer's reelection appeared guaranteed until just weeks before the election, when a string of polls revealed a surprisingly competitive race between the incumbent and independent Dan Osborn. Osborn, a Navy veteran, mechanic and union leader, has received an onslaught of outside funding, forcing Republicans to redouble their efforts in a race that was thought to be an easy win. The 49-year-old independent is a political newcomer who's leaned into a populist message, while billing his opponent as an establishment politician controlled by corporate interests. Fischer is seeking a third term in the Senate, where she served on the powerful armed services and appropriations committees. The 73-year-old, who has a background as a cattle rancher, has leaned on an endorsement from Trump in recent weeks, while painting her independent opponent as a Democrat in disguise. Osborn has pledged not to caucus with either Democrats or Republicans in the Senate. The Cornhusker State is home to nearly twice as many registered Republicans as Democrats, and Trump won Nebraska by nearly 20 points in 2020. But Nebraska is also home to nearly as many nonpartisan voters as Democrats. And with no Democrat in the race, the two voting groups could come together to launch a formidable challenge against the Republican incumbent. The Cook Political Report rates the race as lean Republican, moving it from likely Republican on Oct. 21. ",
           "AbortionOnBallot": "Yes. Initiative 434 and Initiative 439, two competing abortion ballot measures in 2024. Initiative 439, the measure backed by Protect Our Rights coalition, would guarantee a constitutional right to abortion up to the point of fetal viability. The other amendment, Initiative 434, backed by anti-abortion groups, would ban most abortions after about 12 weeks of pregnancy with exceptions for threats to the life of the pregnant patient, rape and incest — similar to current law. The measure that gains the most votes will pass. ",
           "AnticipatedCall": "11/05/2024 09:00:00 PM"
      },
@@ -611,7 +611,7 @@ const stateClosingTimes = [
           "TimeTwenty": "9:00:00 PM",
           "DayTwenty": "11/3/2020",
           "WinnerTwenty": "Biden D",
-          "Zone": "Ee",
+          "Zone": "E",
           "Abbreviation": "NY",
           "HouseNotes": "D-19 The lackluster showing by Democrats in New York during the 2022 midterm elections cost the party any chance it had at keeping control of the House. Democrats are hoping the state will lay the groundwork this year for the party’s return to the majority. Thanks in part to a slightly more favorable map after state lawmakers approved new lines, Democrats are looking to pick up at least two seats in the Empire State, with the potential for more. A top target is the 19th District, which stretches from the Hudson Valley to the Finger Lakes. It’s currently represented by GOP Rep. Marc Molinaro, who won the seat by less than 2 points in 2022 and faces a rematch with Democrat Josh Riley, a lawyer who served as counsel to former. Sen. Al Franken on the Senate Judiciary Committee. The contest has seen the most spending of any House race over the past two months – $38.5 million – with Democrats outspending Republicans by more than $5 million. The presidential race is also poised to play a factor in the 19th District, where voters would have backed Biden by more than 4 points in 2020. But Republicans also believe that Trump is running stronger in blue states than he did four years ago. ",
           "SenateNotes": "Kirsten Gillibrand(D) v Mike Sapraicone(R)",
@@ -647,7 +647,7 @@ const stateClosingTimes = [
           "WinnerTwenty": "Trump R",
           "Zone": "E",
           "Abbreviation": "ND",
-          "HouseNotes": "No",
+          "HouseNotes": "",
           "SenateNotes": "Katrina Christiansen(D) v Kevin Cramer(R)",
           "AbortionOnBallot": "No",
           "AnticipatedCall": "11/05/2024 09:00:00 PM"
@@ -800,7 +800,7 @@ const stateClosingTimes = [
           "WinnerTwenty": "Trump R",
           "Zone": "E",
           "Abbreviation": "TX",
-          "HouseNotes": " ",
+          "HouseNotes": "",
           "SenateNotes": "Colin Allred(D) v Ted Cruz(R). Notes: Once considered a long-shot Democratic bid in the red state, Rep. Colin Allred has launched a formidable challenge against Sen. Ted Cruz for his seat in the upper chamber. Cruz, 53, has been in the Senate since 2013 and has widespread name recognition in the Lone Star State and nationally, having launched a bid for the White House in 2016. He's worked to tie Allred to national Democrats and paint his positions as extreme. Allred, 41, has represented Texas in the House since 2018, when he flipped a long-held GOP district in the Dallas area. Once a linebacker for the Tennessee Titans, the former football player came to Congress after working as a civil rights attorney. Allred has criticized Cruz' record and argued he doesn't pull through for Texans. No Democrat has won a statewide election in Texas since 1994, and the Cook Political Report rates the race as lean-Republican. But Texas remains among Democrats' best pickup opportunities in the upper chamber.",
           "AbortionOnBallot": "No",
           "AnticipatedCall": "11/05/2024 10:00:00 PM"
@@ -851,7 +851,7 @@ const stateClosingTimes = [
           "WinnerTwenty": "Biden D",
           "Zone": "A",
           "Abbreviation": "VA",
-          "HouseNotes": "D1- Vindman(D) v Anderson(R) Notes: both Army veterans and lawyers. In 2019, Vindman found himself at the center of Trump’s first impeachment when the then-ethics lawyer for the National Security Council and his twin brother, Alexander – a director on the NSC – sounded the alarm about a phone call between the president and his Ukrainian counterpart, Volodymyr Zelensky. D2-anchored by Virginia Beach, where GOP Rep. Jen Kiggans is facing off against fellow Navy veteran Missy Cotter Smasal(D). If either party were to capture both races, that could foreshadow a favorable environment.",
+          "HouseNotes": "Vindman(D) v Anderson(R) Notes: In D-1, they are both Army veterans and lawyers. In 2019, Vindman found himself at the center of Trump’s first impeachment when the then-ethics lawyer for the National Security Council and his twin brother, Alexander – a director on the NSC – sounded the alarm about a phone call between the president and his Ukrainian counterpart, Volodymyr Zelensky. D2-anchored by Virginia Beach, where GOP Rep. Jen Kiggans is facing off against fellow Navy veteran Missy Cotter Smasal(D). If either party were to capture both races, that could foreshadow a favorable environment.",
           "SenateNotes": "Tim Kaine(D) v Hung Cao(R)",
           "AbortionOnBallot": "No",
           "AnticipatedCall": "11/05/2024 08:00:00 PM"

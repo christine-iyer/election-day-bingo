@@ -10,7 +10,7 @@ const Timeline = ({ events }) => {
      );
 };
 
-const TimelineItem = ({ date, title, description, details, winner }) => {
+const TimelineItem = ({ date, title, description, details, winner, abortion, zone }) => {
      const [isExpanded, setIsExpanded] = useState(false);
 
      const truncateText = (text, maxLength) => {
@@ -21,10 +21,18 @@ const TimelineItem = ({ date, title, description, details, winner }) => {
      const toggleExpand = () => setIsExpanded(!isExpanded);
      const color = winner === "Biden D" ? "blue" : winner === "Trump R" ? "red" : "black";
      return (
-          <div style={{ marginBottom: "20px" }}>
+          <div style={{ marginBottom: "20px", borderStyle:'groove' }}>
                <p><strong>{date}</strong></p>
                <p>
                     <span style={{ color }}>{title}</span>
+               </p>
+               <p>
+               <strong>Zone:</strong>{" "}
+                    <strong>{zone}</strong>
+               </p>
+               <p>
+               <strong>Abortion on the Ballot?:</strong>{" "}
+                    <strong>{abortion}</strong>
                </p>
                <p>
                     <strong>House Notes:</strong>{" "}
