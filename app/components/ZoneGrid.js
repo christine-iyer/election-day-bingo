@@ -34,7 +34,6 @@ const ZoneGrid = () => {
 
   return (
     <div>
-      <h1>States Organized by Time Zone</h1>
       {Object.keys(zones).sort().map((zone) => (
         <div key={zone} style={{ marginBottom: "40px" }}>
           {/* Zone Header with Closing Time */}

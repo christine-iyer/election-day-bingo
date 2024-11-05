@@ -240,7 +240,7 @@ const stateClosingTimes = [
           "Zone": "A",
           "Abbreviation": "GA",
           "HouseNotes": "",
-          "SenateNotes": " ",
+          "SenateNotes": "",
           "AbortionOnBallot": "No",
           "AnticipatedCall": "11/05/2024 08:00:00 PM"
      },
@@ -919,7 +919,7 @@ const stateClosingTimes = [
           "WinnerTwenty": "Trump R",
           "Zone": "E",
           "Abbreviation": "WY",
-          "HouseNotes": " ",
+          "HouseNotes": "",
           "SenateNotes": "Scott Morrow(D) v John Barrasso(R)",
           "AbortionOnBallot": "No",
           "AnticipatedCall": "11/05/2024 09:00:00 PM"
