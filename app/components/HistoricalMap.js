@@ -259,7 +259,7 @@ const USMap = () => {
       "HouseNotes": " ",
       "SenateNotes": " ",
       "AbortionOnBallot": "No",
-      "Anticipated Call": "11/09/2024 09:00:00 PM"
+      "Anticipated Call": "11/05/2024 08:00:00 PM"
     },
     {
       "State": "Hawaii",
