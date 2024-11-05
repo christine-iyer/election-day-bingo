@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import USMap from './components/USMap'
 import BingoCard from "./components/BingoCard"
 import HistoricalMap from './components/HistoricalMap'
+import Timeline from "./components/Timeline";
 
 
 
@@ -10,7 +11,21 @@ export default function Home() {
   const [name, setName] = useState("");
   const [population, setPopulation] = useState("");
   const [data, setData] = useState([]); // Store fetched data
-
+  const events = [
+    {
+      date: "2024-01-01",
+      title: "New Year Celebration",
+      description: "The beginning of the new year brings excitement and celebration.",
+      details: "Many people celebrate by attending parties or watching fireworks.",
+    },
+    {
+      date: "2024-02-14",
+      title: "Valentine's Day",
+      description: "A day to express love and affection.",
+      details: "People often exchange flowers, chocolates, and cards with loved ones.",
+    },
+    // Add more events here
+  ]
   useEffect(() => {
     fetchData();
   }, []);
@@ -97,6 +112,10 @@ export default function Home() {
       </ul>
   
       </div>
+      <div>
+      <h1>Timeline</h1>
+      <Timeline events={events} />
+    </div>
     
 
 
