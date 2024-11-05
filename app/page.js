@@ -1,5 +1,5 @@
 "use client";
-import { useState} from "react";
+// import { useState} from "react";
 import { getCombinedData } from "./utils/data";
 import { formatTime } from "./utils/helpers";
 import USMap from './components/USMap'
@@ -10,8 +10,8 @@ import ZoneGrid from './components/ZoneGrid'
 
 
 export default function Home() {
-  const [name, setName] = useState("");
-  const [population, setPopulation] = useState("");
+  // const [name, setName] = useState("");
+  // const [population, setPopulation] = useState("");
   // const [data, setData] = useState([]); // Store fetched data
   const events = getCombinedData()
   .map((item) => ({
@@ -34,16 +34,16 @@ export default function Home() {
     });
 
 
-  const fetchData = async () => {
-    try {
-      const response = await fetch("/api/data", { method: "GET" });
-      if (!response.ok) throw new Error("Failed to fetch data");
-      const result = await response.json();
-      setData(result.data);
-    } catch (error) {
-      console.error("Failed to fetch data:", error);
-    }
-  };
+  // const fetchData = async () => {
+  //   try {
+  //     const response = await fetch("/api/data", { method: "GET" });
+  //     if (!response.ok) throw new Error("Failed to fetch data");
+  //     const result = await response.json();
+  //     setData(result.data);
+  //   } catch (error) {
+  //     console.error("Failed to fetch data:", error);
+  //   }
+  // };
 
   // const handleSubmit = async (e) => {
   //   e.preventDefault();
