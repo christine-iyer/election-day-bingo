@@ -3,7 +3,7 @@ import { useState} from "react";
 import { getCombinedData } from "./utils/data";
 import { formatTime } from "./utils/helpers";
 import USMap from './components/USMap'
-import BingoCard from "./components/BingoCard"
+// import BingoCard from "./components/BingoCard"
 import HistoricalMap from './components/HistoricalMap'
 import Timeline from './components/Timeline'
 
@@ -12,7 +12,7 @@ import Timeline from './components/Timeline'
 export default function Home() {
   const [name, setName] = useState("");
   const [population, setPopulation] = useState("");
-  const [data, setData] = useState([]); // Store fetched data
+  // const [data, setData] = useState([]); // Store fetched data
   const events = getCombinedData()
   .map((item) => ({
     date: formatTime(item.AnticipatedCall),
@@ -75,17 +75,12 @@ export default function Home() {
     <div>
 
 
-      <div>
-      <h1>Interactive U.S. Map</h1>
-      <hr></hr>
-      <USMap />
-    </div>
-    <div>
-     <HistoricalMap />
-    </div>
-    <h1>Interactive Bingo Game</h1>
-    <BingoCard />
-    <div>      <h1>Data List</h1>
+     
+    {/* <h1>Interactive Bingo Game</h1>
+    <BingoCard /> */}
+    <div>     
+       
+      {/*<h1>Data List</h1> 
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -102,21 +97,29 @@ export default function Home() {
           required
         />
         <button type="submit">Submit</button>
-      </form>
+      </form> */}
 
-      <h2>Updated Data:</h2>
+      {/* <h2>Updated Data:</h2>
       <ul>
         {data.map((item, index) => (
           <li key={index}>
             {item.name} - Population: {item.population}
           </li>
         ))}
-      </ul>
+      </ul> */}
   
       </div>
       <div>
       <h1>Timeline</h1>
       <Timeline events={events} />
+    </div>
+    <div>
+      <h1>Interactive U.S. Map</h1>
+      <hr></hr>
+      <USMap />
+    </div>
+    <div>
+     <HistoricalMap />
     </div>
     
 

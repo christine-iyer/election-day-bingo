@@ -24,16 +24,15 @@ const TimelineItem = ({ date, title, description, details, winner }) => {
           <div style={{ marginBottom: "20px" }}>
                <p><strong>{date}</strong></p>
                <p>
-                    <strong>Title:</strong>{" "}
                     <span style={{ color }}>{title}</span>
                </p>
                <p>
-                    <strong>Description:</strong>{" "}
-                    {isExpanded ? description : truncateText(description, 50)}
+                    <strong>House Notes:</strong>{" "}
+                    {isExpanded ? description : truncateText(description, 20)}
                </p>
                <p>
-                    <strong>Details:</strong>{" "}
-                    {isExpanded ? details : truncateText(details, 50)}
+                    <strong>Senate Notes:</strong>{" "}
+                    {isExpanded ? details : truncateText(details, 20)}
                </p>
                <button onClick={toggleExpand} style={{ background: "none", color: "blue", border: "none", cursor: "pointer" }}>
                     {isExpanded ? "See Less" : "See More"}
