@@ -45,33 +45,33 @@ export default function Home() {
     }
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault();
 
-    if (!name || !population) {
-      console.error("Name and population are required fields.");
-      return;
-    }
+  //   if (!name || !population) {
+  //     console.error("Name and population are required fields.");
+  //     return;
+  //   }
 
-    try {
-      const response = await fetch("/api/data", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ name, population }),
-      });
+  //   try {
+  //     const response = await fetch("/api/data", {
+  //       method: "POST",
+  //       headers: { "Content-Type": "application/json" },
+  //       body: JSON.stringify({ name, population }),
+  //     });
 
-      if (response.ok) {
-        console.log("Data submitted successfully");
-        setName(""); // Clear input after submission
-        setPopulation("");
-        await fetchData();
-      } else {
-        console.error("Failed to submit data:", await response.json());
-      }
-    } catch (error) {
-      console.error("Error submitting data:", error);
-    }
-  };
+  //     if (response.ok) {
+  //       console.log("Data submitted successfully");
+  //       setName(""); // Clear input after submission
+  //       setPopulation("");
+  //       await fetchData();
+  //     } else {
+  //       console.error("Failed to submit data:", await response.json());
+  //     }
+  //   } catch (error) {
+  //     console.error("Error submitting data:", error);
+  //   }
+  // };
 
   return (
     <div>

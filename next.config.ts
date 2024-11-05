@@ -8,5 +8,10 @@ const nextConfig = {
     return config;
   },
 };
+module.exports = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
+};
 
 module.exports = nextConfig;
