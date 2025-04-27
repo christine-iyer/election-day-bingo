@@ -3,7 +3,7 @@
 import { getCombinedData } from "./utils/data";
 import { formatTime } from "./utils/helpers";
 import USMap from './components/USMap'
-// import BingoCard from "./components/BingoCard"
+import BingoCard from "./components/BingoCard"
 import HistoricalMap from './components/HistoricalMap'
 import ZoneGrid from './components/ZoneGrid'
 
@@ -78,8 +78,8 @@ export default function Home() {
 
 
      
-    {/* <h1>Interactive Bingo Game</h1>
-    <BingoCard /> */}
+    <h1>Interactive Bingo Game</h1>
+    <BingoCard />
     <div>     
        
       {/*<h1>Data List</h1> 
@@ -112,6 +112,7 @@ export default function Home() {
   
       </div>
       <div>
+        <h1>ZG</h1>
       <ZoneGrid events={events} />
     </div>
     <div>
